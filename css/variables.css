@@ -1,0 +1,124 @@
+/* ========================================
+   CSS Custom Properties — Behealth
+   Generated from Figma design tokens
+   ======================================== */
+
+:root {
+  /* ── Font Families ── */
+  --font-primary: 'Gilroy', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
+
+  /* ── Font Weights ── */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ── Font Sizes (Desktop) ── */
+  --fs-112: 112px;
+  --fs-94: 94px;
+  --fs-78: 78px;
+  --fs-64: 64px;
+  --fs-54: 54px;
+  --fs-45: 45px;
+  --fs-36: 36px;
+  --fs-24: 24px;
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+  --fs-10: 10px;
+
+  /* ── Letter Spacing ── */
+  --ls-n2: -2px;
+  --ls-n1: -1px;
+  --ls-0: 0;
+  --ls-1: 1px;
+  --ls-2: 2px;
+
+  /* ── Border Radius (Desktop) ── */
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-99: 99px;
+
+  /* ── Primary / Brand Colors ── */
+  --color-primary-source: #37514A;
+  --color-primary-1: #E8FEF8;
+  --color-primary-2: #E1F7F1;
+  --color-primary-3: #DBF3EC;
+  --color-primary-4: #D2EAE3;
+  --color-primary-5: #C8E1D9;
+  --color-primary-6: #B6D0C9;
+  --color-primary-7: #ABC6BE;
+  --color-primary-8: #4A635C;
+  --color-primary-9: #39504A;
+  --color-primary-10: #293D38;
+
+  /* ── Ink / Graphite (Neutrals) ── */
+  --color-ink-source: #1F1D1D;
+  --color-ink-1: #FBF9F9;
+  --color-ink-2: #F4F2F2;
+  --color-ink-3: #EFEDED;
+  --color-ink-4: #E7E4E4;
+  --color-ink-5: #DDDADA;
+  --color-ink-6: #CCCACA;
+  --color-ink-7: #C2BFBF;
+  --color-ink-8: #605E5E;
+  --color-ink-9: #4D4B4B;
+  --color-ink-10: #3A3939;
+
+  /* ── Base Colors ── */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  /* ── White with opacity ── */
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+
+  /* ── Semantic / Feedback Colors ── */
+  --color-error: #FF3800;
+  --color-error-bg: #FFF8F6;
+  --color-success: #04C65D;
+  --color-success-bg: #EEFBF4;
+  --color-warning: #FDC700;
+
+  /* ── Additional Colors ── */
+  --color-add-100: #E2E3E2;
+  --color-add-200: #EBEBEA;
+}
+
+/* ── Mobile Overrides (≤ 768px) ── */
+@media (max-width: 1280px) {
+  :root {
+    /* Font Sizes */
+    --fs-112: 54px;
+    --fs-94: 45px;
+    --fs-78: 36px;
+    --fs-64: 36px;
+    --fs-54: 24px;
+    --fs-45: 20px;
+    --fs-36: 18px;
+    --fs-24: 16px;
+    --fs-20: 16px;
+    --fs-18: 16px;
+    --fs-16: 14px;
+    --fs-14: 14px;
+    --fs-12: 12px;
+    --fs-10: 10px;
+
+    /* Border Radius */
+    --radius-4: 4px;
+    --radius-8: 4px;
+    --radius-12: 8px;
+    --radius-16: 12px;
+    --radius-24: 16px;
+    --radius-99: 99px;
+  }
+}

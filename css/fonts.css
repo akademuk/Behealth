@@ -1,0 +1,56 @@
+/* ========================================
+   Fonts — Gilroy & Raleway
+   ========================================
+   Gilroy — комерційний шрифт.
+   Покладіть файли .woff2 у папку ../fonts/gilroy/
+   Назви файлів:
+     Gilroy-Regular.woff2
+     Gilroy-Medium.woff2
+     Gilroy-SemiBold.woff2
+     Gilroy-Bold.woff2
+   ======================================== */
+
+/* Gilroy Regular (400) */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gilroy Medium (500) */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gilroy SemiBold (600) */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gilroy Bold (700) */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway Medium (500) */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway/Raleway-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

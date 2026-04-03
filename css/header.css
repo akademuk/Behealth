@@ -1,0 +1,379 @@
+/* ========================================
+   Header & Navigation — Behealth
+   Мінімум стилів для роботи
+   ======================================== */
+
+/* ── Nav ── */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 24px;
+    background: var(--color-add-100);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ── Desktop submenu ── */
+.nav__item--has-sub {
+    position: relative;
+}
+
+.nav__submenu {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    z-index: 100;
+    min-width: 180px;
+}
+
+.nav__item--has-sub.is-open>.nav__submenu {
+    display: flex;
+}
+
+.nav__item--has-sub.is-open>.nav__link--sub-trigger .icon-Namearrow_down {
+    transform: rotate(180deg);
+}
+
+/* ── Burger ── */
+.burger {
+    display: none;
+    min-height: 57px;
+    padding: 16px 24px;
+    cursor: pointer;
+    border: 1.5px solid var(--color-ink-source);
+    color: var(--color-ink-source);
+}
+
+.burger i {
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.burger i::before {
+    font-size: 20px;
+    color: var(--color-ink-source);
+}
+
+.burger:hover,
+.burger:active,
+.burger:focus {
+    background: var(--color-ink-10);
+    color: var(--color-white);
+}
+
+.burger:hover i::before,
+.burger:active i::before,
+.burger:focus i::before {
+    color: var(--color-white);
+}
+
+/* Замінюємо іконку через content при відкритому меню */
+.burger.is-active i:before {
+    content: "\e91a";
+}
+
+/* ── Mobile Menu ── */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: calc(100vh - 73px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding: 64px 24px;
+    background: var(--color-add-100);
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    align-self: stretch;
+}
+
+.mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    width: 100%;
+}
+
+.mobile-menu__link {
+    padding: 5px 0;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-medium);
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s;
+}
+
+.mobile-menu__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu__address-title {
+    color: var(--color-primary-source);
+    text-align: center;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+
+.mobile-menu__address-text {
+    color: var(--color-ink-source);
+    text-align: center;
+    font-size: var(--fs-18);
+    font-style: normal;
+    font-weight: var(--fw-regular);
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+}
+
+.mobile-menu__contact-link--phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-ink-source);
+    font-size: var(--fs-18);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+.mobile-menu__contact-link--phone:nth-of-type(1) {
+    margin-bottom: 4px;
+}
+
+.mobile-menu__contact-link--phone:nth-of-type(2) {
+    margin-bottom: 16px;
+}
+
+.mobile-menu__contact-link--email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-ink-source);
+    font-size: var(--fs-18);
+    font-style: normal;
+    font-weight: var(--fw-medium);
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+.mobile-menu__contact-link--email i:before {
+    font-size: 24px;
+    color: var(--color-primary-source);
+}
+
+.mobile-menu__contact-link--phone i:before {
+    font-size: 24px;
+    color: var(--color-primary-source);
+}
+
+.mobile-menu.is-open {
+    display: flex;
+}
+
+/* Скрол заблокований на body */
+body.menu-open {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width, 0px);
+}
+
+/* ── Mobile submenu ── */
+.mobile-menu__submenu {
+    display: none;
+    overflow: hidden;
+}
+
+.mobile-menu__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.mobile-menu__sublink {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-white);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-medium);
+    letter-spacing: 0;
+}
+
+.mobile-menu__sublinkhover {
+    border-bottom: 2px solid var(--color-white);
+}
+
+.mobile-menu__item--has-sub.is-open .mobile-menu__link {
+    border-bottom: 2px solid var(--color-primary-source);
+    color: var(--color-primary-source);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-medium);
+    letter-spacing: 0;
+}
+
+.mobile-menu__submenu {
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: var(--radius-16);
+    background: var(--color-ink-source);
+}
+
+.mobile-menu__item--has-sub.is-open>.mobile-menu__submenu {
+    display: flex;
+}
+
+.mobile-menu__item--has-sub .mobile-menu__link--sub-trigger .icon-Namearrow_down {
+    transition: all 0.4s;
+}
+
+.mobile-menu__item--has-sub.is-open>.mobile-menu__link--sub-trigger .icon-Namearrow_down {
+    transform: rotate(180deg);
+}
+
+/* ── Показуємо burger на мобільних ── */
+@media (max-width: 1280px) {
+    .nav__list {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        padding: 12px 24px;
+        max-width: calc(100% - 64px);
+        width: calc(100% - 64px);
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 16px;
+    }
+
+    .header .container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__logo {
+        width: 150px;
+        height: 23px;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex: 1 0 0;
+    }
+
+    .nav__link {
+        padding: 5px 0;
+        font-size: var(--fs-18);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.4s;
+    }
+
+    .nav__link i:before {
+        font-size: 16px;
+    }
+
+    .nav__link:hover {
+        border-bottom: 2px solid var(--color-primary-source);
+        color: var(--color-primary-source);
+    }
+
+    .nav__item.nav__item--has-sub.is-open .nav__link {
+        border-bottom: 2px solid var(--color-primary-source);
+        color: var(--color-primary-source);
+    }
+
+    .nav__item.nav__item--has-sub.is-open .nav__link i:before {
+        transform: rotate(180deg);
+        color: var(--color-primary-source);
+    }
+    
+    .nav__submenu {
+        width: 676px;
+        padding: 32px;
+        border-radius: 16px;
+        background: var(--color-ink-source);
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .nav__sublink {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: var(--fw-medium);
+        transition: all 0.4s;
+        border-bottom: 2px solid transparent;
+        width: fit-content;
+    }
+
+    .nav__sublink:hover {
+        border-bottom: 2px solid var(--color-white);
+    }
+
+    .nav__submenu--catalog {
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: auto;
+        right: -100%;
+    }
+
+    .nav__submenu--catalog li {
+        width: calc(50% - 8px)
+    }
+}

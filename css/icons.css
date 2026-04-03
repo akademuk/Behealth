@@ -1,0 +1,64 @@
+/* ========================================
+   IcoMoon Icon Font — Behealth
+   ======================================== */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.woff') format('woff'),
+       url('../fonts/icomoon/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Namealert-circle-m:before      { content: "\e900"; }
+.icon-Namearrow_back:before          { content: "\e901"; }
+.icon-Namearrow_down:before          { content: "\e902"; }
+.icon-Namearrow_forward:before       { content: "\e903"; }
+.icon-Namearrow_up:before            { content: "\e904"; }
+.icon-Namearrow-down:before          { content: "\e905"; }
+.icon-Namearrow-left-down:before     { content: "\e906"; }
+.icon-Namearrow-left-up:before       { content: "\e907"; }
+.icon-Namearrow-left:before          { content: "\e908"; }
+.icon-Namearrow-right-down:before    { content: "\e909"; }
+.icon-Namearrow-right-up:before      { content: "\e90a"; }
+.icon-Namearrow-right:before         { content: "\e90b"; }
+.icon-Namearrow-up:before            { content: "\e90c"; }
+.icon-Namebag-alt-m:before           { content: "\e90d"; }
+.icon-Namebag-m:before               { content: "\e90e"; }
+.icon-Namecalendar-m:before          { content: "\e90f"; }
+.icon-Namecalendar:before            { content: "\e910"; }
+.icon-Namecheck:before               { content: "\e911"; }
+.icon-Nameclock-m:before             { content: "\e912"; }
+.icon-Namecomment-m:before           { content: "\e913"; }
+.icon-Nameemail-m:before             { content: "\e914"; }
+.icon-Nameexport:before              { content: "\e915"; }
+.icon-Namefile-m:before              { content: "\e916"; }
+.icon-Namefilter-m:before            { content: "\e917"; }
+.icon-Namehome-m:before              { content: "\e918"; }
+.icon-Namelocation-m:before          { content: "\e919"; }
+.icon-Nameminus:before               { content: "\e91a"; }
+.icon-Namepause:before               { content: "\e91b"; }
+.icon-Namephone-m:before             { content: "\e91c"; }
+.icon-Namepluc-circle-m:before       { content: "\e91d"; }
+.icon-Nameplus:before                { content: "\e91e"; }
+.icon-Namequestion-circle-m:before   { content: "\e91f"; }
+.icon-Namestar:before                { content: "\e920"; }
+.icon-Nameukraine:before             { content: "\e921"; }
+.icon-Nameupload-m:before            { content: "\e922"; }
+.icon-Nameuser-m:before              { content: "\e923"; }
+.icon-Nameverified_badge:before      { content: "\e924"; }
+.icon-Namewatch-m:before             { content: "\e925"; }
