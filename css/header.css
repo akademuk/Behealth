@@ -275,6 +275,14 @@ body.menu-open {
     .burger {
         display: flex;
     }
+
+        .header .container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }
 
 @media (min-width: 1280px) {
@@ -282,7 +290,7 @@ body.menu-open {
         padding: 12px 24px;
         max-width: calc(100% - 64px);
         width: calc(100% - 64px);
-        top: 16px;
+        top: 12px;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 16px;

@@ -226,6 +226,36 @@ const foundationSwiper = new Swiper('.foundation__body', {
   },
 });
 
+/* Reviews Vacancy Swiper */
+const reviewsVacancySwiper = new Swiper('.reviews--vacancy.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: true,
+  navigation: {
+    nextEl: '.reviews--vacancy__title-action .news__btn-next',
+    prevEl: '.reviews--vacancy__title-action .news__btn-prev',
+  },
+  breakpoints: {
+    768:  { slidesPerView: 2, spaceBetween: 16 },
+    1280: { slidesPerView: 3, spaceBetween: 24 },
+  },
+});
+
+/* New Vacancies Swiper */
+const newVacancysReviewsSwiper = new Swiper('.newvacancysreviews__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: false,
+  navigation: {
+    nextEl: '.newvacancysreviews__btn-next',
+    prevEl: '.newvacancysreviews__btn-prev',
+  },
+  breakpoints: {
+    768:  { slidesPerView: 2, spaceBetween: 16 },
+    1280: { slidesPerView: 3, spaceBetween: 24 },
+  },
+});
+
 // Приклад:
 // const swiper = new Swiper('.swiper', {
 //   loop: true,
@@ -394,3 +424,58 @@ if (parallaxItems.length) {
 
   runParallax();
 }
+
+/* ========================================
+   Custom File Upload
+   ======================================== */
+(function () {
+  const area  = document.getElementById('file-upload-area');
+  const input = document.getElementById('resume');
+  if (!area || !input) return;
+
+  const zone  = area.querySelector('.file-upload__zone');
+  const label = area.querySelector('.file-upload__name');
+
+  function setFile(file) {
+    if (!file) return;
+    const maxMB = 5;
+    if (file.size > maxMB * 1024 * 1024) {
+      label.textContent = 'Файл занадто великий (макс. 5MB)';
+      label.style.color = 'red';
+      input.value = '';
+      return;
+    }
+    label.style.color = '';
+    label.textContent = file.name;
+  }
+
+  input.addEventListener('change', () => {
+    if (input.files && input.files[0]) setFile(input.files[0]);
+  });
+
+  zone.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LABEL') return;
+    input.click();
+  });
+
+  zone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    area.classList.add('file-upload--drag');
+  });
+
+  zone.addEventListener('dragleave', () => {
+    area.classList.remove('file-upload--drag');
+  });
+
+  zone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    area.classList.remove('file-upload--drag');
+    const file = e.dataTransfer.files[0];
+    if (file) {
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      input.files = dt.files;
+      setFile(file);
+    }
+  });
+})();
