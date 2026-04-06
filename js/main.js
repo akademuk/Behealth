@@ -346,7 +346,7 @@ const PARALLAX_MAX   = 0.055;          // max зсув = 5.5% (запас 2% в�
 
 const parallaxItems = [
   // Великі фони
-  ...['.awards__bg', '.banner-bg'].map(s => ({ selector: s, speed: 0.08 })),
+  ...['.awards__bg', '.banner-bg', '.hero--big__bg'].map(s => ({ selector: s, speed: 0.08 })),
   // Картки категорій
   ...['.category__header-img'].map(s => ({ selector: s, speed: 0.04, all: true })),
   // Foundation слайди
