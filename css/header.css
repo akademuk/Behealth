@@ -318,7 +318,7 @@ body.menu-open {
 
     .nav__link {
         padding: 5px 0;
-        font-size: var(--fs-18);
+        font-size: var(--fs-16);
         font-style: normal;
         font-weight: 500;
         letter-spacing: 0;
