@@ -897,7 +897,7 @@ body {
   display: flex;
   align-items: center;
   align-self: stretch;
-  justify-content: space-between;
+  justify-content:flex-end;
   flex: 1 0 0;
 }
 
@@ -1439,7 +1439,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 8px;
+  gap: 4px;
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -1986,7 +1986,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 29px;
   align-self: stretch;
 }
 
@@ -1994,7 +1994,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
   align-self: stretch;
 }
 
@@ -2035,8 +2035,8 @@ textarea::placeholder {
 .about--article__content .results__content::before {
   content: "+";
   position: absolute;
-  top: 21px;
-  right: 16px;
+    top: 37px;
+    right: 28px;
   width: 40px;
   height: 40px;
   flex-shrink: 0;
@@ -2163,14 +2163,17 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 17px;
   align-self: flex-start;
 }
 
-.article--about {}
+.article--about {
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
 
 .article--about .container {
-  gap: 32px;
+  gap: 21px;
 }
 
 .article--about .article__sidebar h2 {
@@ -2199,7 +2202,7 @@ textarea::placeholder {
 }
 
 .article--about-card {
-  padding: 12px;
+  padding: 12px 12px 7px 12px;
   display: flex;
   align-items: stretch;
   gap: 16px;
@@ -2239,7 +2242,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 15px;
   align-self: stretch;
 }
 
@@ -3258,7 +3261,13 @@ textarea::placeholder {
   margin-bottom: 32px;
 }
 
-
+.about--hero #hero-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2; 
+  letter-spacing: 0;
+  margin-bottom: -16px;
+}
 
 
 
@@ -3658,7 +3667,7 @@ textarea::placeholder {
   }
 
   .foundation .container {
-    gap: 80px;
+    gap: 70px;
   }
 
   .foundation__slide--small {
@@ -3819,11 +3828,11 @@ textarea::placeholder {
     padding-bottom: 96px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 64px;
   }
 
   .about--hero .hero__content {
-    gap: 32px;
+    gap: 0;
   }
 
   .about--hero #hero-heading {
@@ -3855,7 +3864,7 @@ textarea::placeholder {
 
   .about--article>.container {
     max-width: 1176px;
-    gap: 124px;
+    gap: 140px;
     flex-direction: row;
     flex-wrap: nowrap;
   }
@@ -3868,16 +3877,18 @@ textarea::placeholder {
 
   .about--article__content {
     flex: 1 0 0;
-    gap: 64px;
+    gap: 56px;
   }
 
   .about--article__content .container {
     max-width: 100%;
+    gap: 24px;
   }
 
   .about--article__content .results__item {
     height: 376px;
     min-width: 300px;
+    border-radius: 24px;
   }
 
   .results__item.results__item--green .results__content {
@@ -3902,7 +3913,7 @@ textarea::placeholder {
   }
 
   .article--about {
-    padding: 160px 52px 64px 52px;
+    padding: 150px 52px 64px 52px;
   }
 
   .article--about .container {
@@ -3910,11 +3921,15 @@ textarea::placeholder {
   }
 
   .article--about .article__sidebar-list {
-    padding-left: 20px;
+    padding-left: 0;
+  }
+
+  .article--about .article__sidebar-link {
+    padding: 16px 40px;
   }
 
   .article--about .article__sidebar {
-    gap: 64px;
+    gap: 45px;
   }
 
   .article--about .article__content {
@@ -3924,6 +3939,7 @@ textarea::placeholder {
   .article--about-card {
     padding: 16px;
     gap: 24px;
+    min-height: 208px;
   }
 
   .article--about-card-img {
@@ -3933,6 +3949,7 @@ textarea::placeholder {
 
   .article--about-card-content {
     justify-content: space-between;
+    gap: 17px;
   }
 
   .banner {
@@ -3941,7 +3958,7 @@ textarea::placeholder {
   }
 
   .article--about {
-    overflow: auto;
+    overflow: unset;
   }
 
   .article--about .article__sidebar nav {
@@ -4250,5 +4267,18 @@ textarea::placeholder {
 
   .foundation__slide {
     height: 476px;
+  }
+
+  .about--article .results__value {
+    font-size: 64px;
+  }
+
+  .about--article__content .results__item .results__content{
+    padding: 48px;
+  }
+
+  .about--team .btn {
+    right: 48px;
+    bottom: 48px;
   }
 }
