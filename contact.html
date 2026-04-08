@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behealth</title>
+
+    <!-- Lib Styles -->
+    <link rel="stylesheet" href="css/lib/swiper.min.css">
+    <link rel="stylesheet" href="css/lib/fancybox.min.css">
+    <link rel="stylesheet" href="css/lib/aos.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+
+            <nav class="nav" aria-label="Головна навігація">
+                <!-- Лого -->
+                <a href="/" class="nav__logo">
+                    <img src="img/logo.svg" width="150" height="23" alt="Behealth Logo">
+                </a>
+
+                <!-- Desktop меню -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Головна</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button" aria-expanded="false"
+                            aria-haspopup="true">
+                            Про компанію
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="nav__submenu">
+                            <li><a href="#" class="nav__sublink">Місія та візія <i class="icon-Namearrow-right-down"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Корпоративні цінності <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Сторінка фармаконагляду <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Кар’єра</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button">
+                            Каталог
+                            <i class="icon-Namearrow_down"></i>
+                        </button>
+                        <ul class="nav__submenu nav__submenu--catalog">
+                            <li><a href="#" class="nav__sublink">Усі препарати <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я нирок <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Чоловіче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ШКТ <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Жіноче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ендо-системи <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="nav__sublink">Дитяче здоров’я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Вітаміни та мінерали <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="nav__sublink">Гриби <i class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакти</a>
+                    </li>
+                </ul>
+                <a href="/vacancies" class="nav__link-vacancies btn btn--black">Вакансії
+                    <i class="icon-Namearrow-right-up" aria-hidden="true"></i>
+                </a>
+                <!-- Burger button -->
+                <button class="burger btn btn--transparent" type="button" aria-label="Відкрити меню"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    Меню
+                    <i class="icon-Nameplus" aria-hidden="true"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Головна</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button"
+                            aria-expanded="false" aria-haspopup="true">
+                            Про компанію
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Місія та візія <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Корпоративні цінності <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Сторінка фармаконагляду <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Кар’єра</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Блог</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button">
+                            Каталог
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Усі препарати <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Чоловіче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Жіноче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я нирок <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ШКТ <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ендо-системи <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Вітаміни та мінерали <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Дитяче здоров’я <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Гриби <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Контакти</a>
+                    </li>
+                </ul>
+                <address class="mobile-menu__address">
+                    <p class="mobile-menu__address-title">НАША АДРЕСА:</p>
+                    <p class="mobile-menu__address-text">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+                    <p class="mobile-menu__address-title">ТЕЛЕФОНИ:</p>
+                    <a href="tel:+380675474099" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i
+                            class="icon-Namephone-m" aria-hidden="true"></i> +38 (067) 547 40 99</a>
+                    <a href="tel:+380445926862" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i
+                            class="icon-Namephone-m" aria-hidden="true"></i> +38 (044) 592 68 62</a>
+                    <p class="mobile-menu__address-title">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua"
+                        class="mobile-menu__contact-link mobile-menu__contact-link--email"><i class="icon-Nameemail-m"
+                            aria-hidden="true"></i> info@behealth.com.ua</a>
+                </address>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <section class="hero--big hero--big--vacancy hero--big--contact">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="/" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item" aria-current="page">
+                            <span class="breadcrumbs__text">Контакти</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero--big__content">
+                    <span class="badge">Зв'яжіться з нами</span>
+                    <h1>Контакти</h1>
+                    <p>Зв'яжіться з нами для отримання детальної інформації</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact--section">
+            <div class="container">
+                <div class="contact--section__left">
+                    <div class="contact--section__left-info">
+                        <span class="badge">Телефонуйте нам</span>
+                        <div class="contact--section__left-title">
+                            <h2>Контакти та співпраця</h2>
+                            <p>Зв'яжіться з нами для отримання детальної інформації чи обговорення співпраці. Команда
+                                Біхелс із задоволенням відповість на всі ваші запитання.</p>
+                        </div>
+                        <div class="contact--section__left-box">
+                            <h3>Контактні дані:</h3>
+                            <address class="contact--section__left-address">
+                                <ul class="contact--section__left-list">
+                                    <li class="contact--section__left-item">
+                                        <span class="contact--section__left-icon">
+                                            <i class="icon-Namephone-m"></i>
+                                        </span>
+                                        <p class="contact--section__left-text">
+                                            <b>Телефон:</b>
+                                            <a href="tel:+380675474099" class="contact--section__left-link">
+                                                +38 (067) 547 40 99
+                                            </a>
+                                            <a href="tel:+380445926862" class="contact--section__left-link">
+                                                +38 (044) 592 68 62
+                                            </a>
+                                        </p>
+                                    </li>
+                                    <li class="contact--section__left-item">
+                                        <span class="contact--section__left-icon">
+                                            <i class="icon-Nameemail-m"></i>
+                                        </span>
+                                        <p class="contact--section__left-text">
+                                            <b>Email:</b>
+                                            <a href="mailto:info@behealth.com.ua" class="contact--section__left-link">
+                                                info@behealth.com.ua
+                                            </a>
+                                        </p>
+                                    </li>
+                                    <li class="contact--section__left-item">
+                                        <span class="contact--section__left-icon">
+                                            <i class="icon-Namelocation-m"></i>
+                                        </span>
+                                        <p class="contact--section__left-text">
+                                            <b>Адреса:</b>
+                                            <a href="https://www.google.com/maps/place/03110,+м.Київ,+вул.+Солом'янська+3,+офіс+41"
+                                                class="contact--section__left-link" target="_blank">
+                                                03110, м.Київ, вул. Солом'янська 3, офіс 41
+                                            </a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="contact--section__left-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.587994559522!2d30.4737761!3d50.4301475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cebf62d434ab%3A0xcabbe42426c12026!2z0YPQuy4g0KHQvtC70L7QvNC10L3RgdC60LDRjywgMywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1775042159684!5m2!1sru!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact--section__right">
+                    <div class="cta__form-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="100">
+                        <span class="badge">Зв'яжіться з нами</span>
+                        <h3>Маєте запитання щодо продукції чи співпраці? Команда допоможе знайти рішення</h3>
+                        <p>Заповніть форму, щоб отримати детальну консультацію. Зв'яжемось з вами найближчим часом і
+                            надамо повну підтримку для подальшої взаємодії.</p>
+                        <form class="cta__form">
+                            <div class="cta__form-group">
+                                <label for="name">Ім’я:</label>
+                                <input type="text" id="name" name="name" placeholder="напр., Марія" required>
+                            </div>
+                            <div class="cta__form-group-row">
+                                <div class="cta__form-group">
+                                    <label for="phone">Телефон:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+38 0XX  XXX  XX  XX"
+                                        required>
+                                </div>
+                                <div class="cta__form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="напр., main@mail.com"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="cta__form-group">
+                                <label for="message">Ваше повідомлення:</label>
+                                <textarea id="message" name="message" placeholder="почніть вводити текст тут"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--black" id="submitBtn">
+                                <i class="icon-Namecomment-m" aria-hidden="true"></i>
+                                Надіслати
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="contact--section-bg">
+                <img src="img/contac-banner.jpg" width="1920" height="1200" loading="lazy" alt="">
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="banner-image">
+                <img src="img/logo-white.svg" width="160" height="160" loading="lazy"
+                    alt="Логотип медичної компанії «Біхелс»">
+            </div>
+            <h3>Щоб жити довго та якісно!</h3>
+            <div class="banner-bg">
+                <img src="img/bg_for_export.jpg" width="1920" height="776" loading="lazy" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer__body" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+                <!-- Контакти -->
+                <address class="footer__contacts">
+                    <p class="footer__contacts-label">НАША АДРЕСА:</p>
+                    <p class="footer__contacts-address">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+
+                    <p class="footer__contacts-label">ТЕЛЕФОНИ:</p>
+                    <ul class="footer__contacts-list" role="list">
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380675474099" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (067) 547 40 99
+                            </a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380445926862" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (044) 592 68 62
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__contacts-label">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua" class="footer__contacts-link footer__contacts-link--email">
+                        <i class="icon-Nameemail-m" aria-hidden="true"></i>
+                        info@behealth.com.ua
+                    </a>
+                </address>
+
+                <!-- Навігація -->
+                <div class="footer__nav">
+
+                    <nav class="footer__nav-col" aria-label="Клієнтам">
+                        <h3 class="footer__nav-heading">Клієнтам</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Головна
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/about" class="footer__nav-link">Про компанію
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/vacancies" class="footer__nav-link">Кар'єра
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/blog" class="footer__nav-link">Блог
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/catalog" class="footer__nav-link">Каталог
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/contacts" class="footer__nav-link">Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer__nav-col" aria-label="Юридична інформація">
+                        <h3 class="footer__nav-heading">Юридична інформація</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item">
+                                <a href="/privacy-policy" class="footer__nav-link">Політика конфіденційності
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/cookie-policy" class="footer__nav-link">Сторінка Cookie
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/public-offer" class="footer__nav-link">Публічна оферта
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/pharmacovigilance" class="footer__nav-link">Фармаконагляд
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+            <!-- Підвал -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-contents">
+                    <p class="footer__bottom-copy">
+                        <small>© 2026 ТОВ «Біхелс». Всі права захищені.</small>
+                    </p>
+                    <p class="footer__bottom-legal">
+                        <small>Медична практика здійснюється на підставі Ліцензії Міністерства охорони здоров'я України
+                            серія АЕ №&nbsp;285419 від 14.12.2023 р. Акредитаційний сертифікат серія МЗ №&nbsp;014782
+                            (Вища категорія). Код ЄДРПОУ: 43258791. Юридична адреса: 01001, Україна, м. Київ, вул.
+                            Інститутська, 28, офіс 402. Платник податку на прибуток на загальних підставах.
+                            Самолікування може бути шкідливим для вашого здоров'я. Інформація на цьому сайті надана
+                            виключно з освітньою метою і не замінює професійну медичну консультацію, діагностику або
+                            лікування. Завжди звертайтесь до свого лікаря або іншого кваліфікованого фахівця з
+                            будь-якими питаннями щодо стану здоров'я.</small>
+                    </p>
+                </div>
+                <p class="footer__bottom-dev">
+                    Designed by <a href="https://shapoval.agency" class="footer__bottom-dev-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/logo-brand.svg" width="140" height="24" alt="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Lib Scripts -->
+    <script src="js/lib/lenis.min.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/fancybox.umd.js"></script>
+    <script src="js/lib/simpleParallax.min.js"></script>
+    <script src="js/lib/aos.min.js"></script>
+
+    <!-- Contact Success Modal -->
+    <div class="contact-modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" hidden>
+        <div class="contact-modal__overlay" id="contactModalOverlay"></div>
+        <div class="contact-modal__inner" data-lenis-prevent>
+            <div class="contact-modal__box">
+                <button class="contact-modal__close btn btn--transparent" id="contactModalClose" type="button">
+                    ЗАКРИТИ <span aria-hidden="true">—</span>
+                </button>
+            <div class="contact-modal__content">
+                <div class="contact-modal__icon">
+                    <img src="img/icons/error-icons.svg" width="24" height="24" alt="">
+                </div>
+                <h2 class="contact-modal__title" id="contactModalTitle">Дякуємо за ваше звернення!</h2>
+                <p class="contact-modal__subtitle">Ваша заявка успішно отримана нашою командою</p>
+
+                <p class="contact-modal__next-label">Що відбувається далі?</p>
+
+                <ol class="contact-modal__steps">
+                    <li class="contact-modal__step">
+                        <span class="contact-modal__step-num">01</span>
+                        <div>
+                            <h3>Отримання заявки</h3>
+                            <p>Ваша заявка вже в нашій системі. Наші фахівці отримали повідомлення та розпочинають опрацювання вашого запиту.</p>
+                        </div>
+                    </li>
+                    <li class="contact-modal__step">
+                        <span class="contact-modal__step-num">02</span>
+                        <div>
+                            <h3>Аналіз запиту (протягом 24 годин)</h3>
+                            <p>Наша команда проаналізує ваш запит та визначить найбільш компетентного фахівця для відповіді на ваші питання або обговорення співпраці.</p>
+                        </div>
+                    </li>
+                    <li class="contact-modal__step">
+                        <span class="contact-modal__step-num">03</span>
+                        <div>
+                            <h3>Зворотній зв'язок (1-2 робочих дні)</h3>
+                            <p>Ми зв'яжемося з вами найближчим часом через вказані контактні дані (телефон або email) для надання детальної консультації.</p>
+                        </div>
+                    </li>
+                    <li class="contact-modal__step">
+                        <span class="contact-modal__step-num">04</span>
+                        <div>
+                            <h3>Консультація та рішення</h3>
+                            <p>Надамо вам повну інформацію щодо вашого запиту, обговоримо можливості співпраці або допоможемо з вибором продукції.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="contact-modal__info-block">
+                    <span class="badge">
+                        <i class="icon-Namealert-circle-m"></i>
+                        Час обробки</span>
+                    <h4>Стандартний термін відповіді: 1-2 робочих дні</h4>
+                    <ul>
+                        <li>Робочі години: Пн-Пт, 9:00-18:00</li>
+                        <li>Заявки, отримані у вихідні, будуть опрацьовані у перший робочий день.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-modal__info-block">
+                    <span class="badge">
+                        <i class="icon-Namealert-circle-m"></i>
+                        Підтвердження</span>
+                    <h4>Перевірте вашу електронну пошту</h4>
+                    <ul>
+                        <li>На вказану адресу надіслано лист з підтвердженням отримання вашого запиту та номером заявки.</li>
+                        <li>Не забудьте перевірити папку "Спам".</li>
+                    </ul>
+                </div>
+
+                <div class="contact-modal__info-block contact-modal__info-block--cta">
+                    <div>
+                        <span class="badge">
+                            <i class="icon-Namealert-circle-m"></i>
+                            Потрібна термінова консультація?</span>
+                        <p>Якщо ваше питання потребує негайної відповіді, ви можете зв'язатися з нами безпосередньо за телефоном або електронною поштою.</p>
+                    </div>
+                    <a href="tel:+380675474099" class="btn btn--black">Зв'язок з БІХЕЛС</a>
+                </div>
+            </div>
+                </div><!-- /.contact-modal__box -->
+            </div><!-- /.contact-modal__inner -->
+        </div><!-- /.contact-modal -->
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -479,3 +479,41 @@ if (parallaxItems.length) {
     }
   });
 })();
+
+/* ========================================
+   Contact Form Modal
+   ======================================== */
+(function () {
+  const submitBtn   = document.getElementById('submitBtn');
+  const modal       = document.getElementById('contactModal');
+  const closeBtn    = document.getElementById('contactModalClose');
+  const overlay     = document.getElementById('contactModalOverlay');
+  if (!submitBtn || !modal) return;
+
+  function openModal() {
+    modal.hidden = false;
+    if (lenis) lenis.stop();
+    closeBtn.focus();
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    if (lenis) lenis.start();
+    submitBtn.focus();
+  }
+
+  submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.querySelector('.contact-modal__inner').addEventListener('click', (e) => {
+    if (!e.target.closest('.contact-modal__box')) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+})();
