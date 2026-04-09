@@ -517,3 +517,92 @@ if (parallaxItems.length) {
     if (e.key === 'Escape' && !modal.hidden) closeModal();
   });
 })();
+
+/* ── Pharmacovigilance Tabs + Form Steps ── */
+(function () {
+  const tabs = document.querySelectorAll('.pharmacovigilance__tab');
+  const panels = document.querySelectorAll('.pharmacovigilance__panel');
+
+  if (!tabs.length) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+
+      tabs.forEach((t) => t.classList.remove('pharmacovigilance__tab--active'));
+      panels.forEach((p) => p.classList.remove('pharmacovigilance__panel--active'));
+
+      tab.classList.add('pharmacovigilance__tab--active');
+      document.querySelector(`[data-panel="${target}"]`).classList.add('pharmacovigilance__panel--active');
+    });
+  });
+
+  // Multi-step form
+  document.querySelectorAll('.pharmacovigilance__form').forEach((form) => {
+    const wrapper = form.closest('.pharmacovigilance__form-wrapper');
+    const panel = wrapper?.closest('.pharmacovigilance__panel');
+    const infoBlock = panel?.querySelector('.pharmacovigilance__info');
+    const blocks = form.querySelectorAll('.pharmacovigilance__form-block');
+    const btnNext = form.querySelector('.pharmacovigilance__btn-next');
+    const btnPrev = form.querySelector('.pharmacovigilance__btn-prev');
+    const successScreen = wrapper?.querySelector('.pharmacovigilance__success');
+    let current = 0;
+    const total = blocks.length;
+
+    function showBlock(index) {
+      blocks.forEach((b) => b.classList.remove('pharmacovigilance__form-block--active'));
+      blocks[index].classList.add('pharmacovigilance__form-block--active');
+      if (btnPrev) btnPrev.style.display = index === 0 ? 'none' : '';
+
+      // Show info block only on step 1
+      if (infoBlock) infoBlock.style.display = index === 0 ? '' : 'none';
+
+      // Scroll to top of wrapper so user sees the header
+      const top = wrapper ? wrapper.getBoundingClientRect().top + window.scrollY - 100 : 0;
+      if (lenis) {
+        lenis.scrollTo(top, { duration: 0.6 });
+      } else {
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+
+      // Update next button text & icon
+      if (btnNext) {
+        if (index === total - 1) {
+          btnNext.innerHTML = 'Надіслати форму <i class="icon-Namearrow-right" aria-hidden="true"></i>';
+        } else {
+          btnNext.innerHTML = 'Наступний блок <i class="icon-Namearrow-right" aria-hidden="true"></i>';
+        }
+      }
+    }
+
+    if (btnNext) {
+      btnNext.addEventListener('click', () => {
+        if (current < total - 1) {
+          current++;
+          showBlock(current);
+        } else {
+          // Show success screen
+          if (successScreen) {
+            form.style.display = 'none';
+            successScreen.hidden = false;
+            const top = wrapper ? wrapper.getBoundingClientRect().top + window.scrollY - 100 : 0;
+            if (lenis) {
+              lenis.scrollTo(top, { duration: 0.6 });
+            } else {
+              window.scrollTo({ top, behavior: 'smooth' });
+            }
+          }
+        }
+      });
+    }
+
+    if (btnPrev) {
+      btnPrev.addEventListener('click', () => {
+        if (current > 0) {
+          current--;
+          showBlock(current);
+        }
+      });
+    }
+  });
+})();

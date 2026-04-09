@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behealth</title>
+
+    <!-- Lib Styles -->
+    <link rel="stylesheet" href="css/lib/swiper.min.css">
+    <link rel="stylesheet" href="css/lib/fancybox.min.css">
+    <link rel="stylesheet" href="css/lib/aos.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+
+            <nav class="nav" aria-label="Головна навігація">
+                <!-- Лого -->
+                <a href="/" class="nav__logo">
+                    <img src="img/logo.svg" width="150" height="23" alt="Behealth Logo">
+                </a>
+
+                <!-- Desktop меню -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Головна</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button" aria-expanded="false"
+                            aria-haspopup="true">
+                            Про компанію
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="nav__submenu">
+                            <li><a href="#" class="nav__sublink">Місія та візія <i class="icon-Namearrow-right-down"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Корпоративні цінності <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Сторінка фармаконагляду <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Кар’єра</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button">
+                            Каталог
+                            <i class="icon-Namearrow_down"></i>
+                        </button>
+                        <ul class="nav__submenu nav__submenu--catalog">
+                            <li><a href="#" class="nav__sublink">Усі препарати <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я нирок <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Чоловіче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ШКТ <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Жіноче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ендо-системи <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="nav__sublink">Дитяче здоров’я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Вітаміни та мінерали <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="nav__sublink">Гриби <i class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакти</a>
+                    </li>
+                </ul>
+                <a href="/vacancies" class="nav__link-vacancies btn btn--black">Вакансії
+                    <i class="icon-Namearrow-right-up" aria-hidden="true"></i>
+                </a>
+                <!-- Burger button -->
+                <button class="burger btn btn--transparent" type="button" aria-label="Відкрити меню"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    Меню
+                    <i class="icon-Nameplus" aria-hidden="true"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Головна</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button"
+                            aria-expanded="false" aria-haspopup="true">
+                            Про компанію
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Місія та візія <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Корпоративні цінності <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Сторінка фармаконагляду <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Кар’єра</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Блог</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button">
+                            Каталог
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Усі препарати <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Чоловіче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Жіноче здоров'я <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я нирок <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ШКТ <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ендо-системи <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Вітаміни та мінерали <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Дитяче здоров’я <i
+                                        class="icon-Namearrow-right-down"></i></a>
+                            </li>
+                            <li><a href="#" class="mobile-menu__sublink">Гриби <i
+                                        class="icon-Namearrow-right-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Контакти</a>
+                    </li>
+                </ul>
+                <address class="mobile-menu__address">
+                    <p class="mobile-menu__address-title">НАША АДРЕСА:</p>
+                    <p class="mobile-menu__address-text">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+                    <p class="mobile-menu__address-title">ТЕЛЕФОНИ:</p>
+                    <a href="tel:+380675474099" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i
+                            class="icon-Namephone-m" aria-hidden="true"></i> +38 (067) 547 40 99</a>
+                    <a href="tel:+380445926862" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i
+                            class="icon-Namephone-m" aria-hidden="true"></i> +38 (044) 592 68 62</a>
+                    <p class="mobile-menu__address-title">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua"
+                        class="mobile-menu__contact-link mobile-menu__contact-link--email"><i class="icon-Nameemail-m"
+                            aria-hidden="true"></i> info@behealth.com.ua</a>
+                </address>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <section class="hero--big hero--big--vacancy hero--big--contact">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="/" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item" aria-current="page">
+                            <span class="breadcrumbs__text">Фармаконагляд</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero--big__content">
+                    <span class="badge">Відповідальна фармацевтика</span>
+                    <h1>Фармаконагляд</h1>
+                    <p>Ваша безпека є нашим пріоритетом. <br>
+                        Повідомляйте про побічні явища та отримуйте інформацію про моніторинг безпеки ліків.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="pharmacovigilance-intro">
+            <div class="container">
+                <div class="pharmacovigilance-intro__top">
+                    <span class="badge">
+                        <i class="icon-Namequestion-circle-m" aria-hidden="true"></i>
+                        Що таке фармаконагляд?
+                    </span>
+                    <p class="pharmacovigilance-intro__desc">
+                        Фармаконагляд — це наука та діяльність, пов’язана з виявленням, оцінкою, розумінням і
+                        запобіганням несприятливим ефектам або будь-яким іншим проблемам, пов’язаним з медициною. Ми
+                        закликаємо медичних працівників і пацієнтів повідомляти про будь-які підозрювані побічні
+                        реакції.
+                    </p>
+                </div>
+                <div class="pharmacovigilance-intro__body">
+                    <div class="pharmacovigilance-intro__heading">
+                        <h2>З метою постійного контролю безпеки та ефективності нашої продукції в компанії функціонує
+                            відділ фармаконагляду.</h2>
+                    </div>
+                    <div class="pharmacovigilance-intro__text">
+                        <p>Одним із наших ключових пріоритетів є забезпечення пацієнтів якісними, ефективними та
+                            безпечними лікарськими засобами, користь від застосування яких переважає можливі ризики.</p>
+                        <p>У разі виявлення побічних реакцій наші фахівці проводять аналіз причин їх виникнення та
+                            вживають усіх необхідних заходів для мінімізації ризиків і запобігання подібним випадкам у
+                            майбутньому.p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section class="pharmacovigilance">
+            <div class="container">
+
+                <!-- Tab buttons -->
+                <div class="pharmacovigilance__tabs">
+                    <button class="pharmacovigilance__tab pharmacovigilance__tab--active" type="button"
+                        data-tab="patients">
+                        <img src="img/icons/pharmacovigilance-icon1.svg" width="20" height="20" alt="">
+                        Для пацієнтів
+                    </button>
+                    <button class="pharmacovigilance__tab" type="button" data-tab="medics">
+                        <img src="img/icons/pharmacovigilance-icon2.svg" width="20" height="20" alt="">
+                        Для медичних співробітників
+                    </button>
+                </div>
+
+                <!-- Tab: Patients -->
+                <div class="pharmacovigilance__panel pharmacovigilance__panel--active" data-panel="patients">
+
+                    <!-- Info cards -->
+                    <div class="pharmacovigilance__info">
+                        <div class="pharmacovigilance__info-card">
+                            <h3 class="pharmacovigilance__info-title">Про що повідомляти?</h3>
+                            <ul class="pharmacovigilance__info-list">
+                                <li>Будь-які небажані або несподівані ефекти після прийому наших продуктів</li>
+                                <li>Побічні ефекти, не зазначені в інформації про продукт</li>
+                                <li>Помилки ліків або проблеми з якістю продукту</li>
+                                <li>Будь-які сумніви щодо безпеки наших продуктів</li>
+                            </ul>
+                        </div>
+                        <div class="pharmacovigilance__info-card">
+                            <h3 class="pharmacovigilance__info-title">Навіщо звітувати?</h3>
+                            <ul class="pharmacovigilance__info-list pharmacovigilance__info-list--check">
+                                <li>Допоможіть нам забезпечити безпеку нашої продукції</li>
+                                <li>Сприяти постійному моніторингу безпеки</li>
+                                <li>Захистіть інших пацієнтів, використовуючи наші продукти</li>
+                                <li>Отримайте вказівки щодо вашої конкретної ситуації</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="pharmacovigilance__form-wrapper">
+
+                        <form class="pharmacovigilance__form" id="pharmacovigilance-form">
+
+                            <!-- Block 1: Patient info -->
+                            <div class="pharmacovigilance__form-block pharmacovigilance__form-block--active"
+                                data-block="1">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про пацієнта:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 1 з 3</span>
+                                </div>
+                                <div class="pharmacovigilance__form-definition">
+                                    <span class="badge">
+                                        <i class="icon-Namequestion-circle-m" aria-hidden="true"></i>
+                                        Визначення
+                                    </span>
+                                    <p>*Пацієнт - особа, яка отримує або отримувала лікування певним лікарським засобом
+                                        і є джерелом інформації про побічні реакції, відсутність ефективності або інші
+                                        явища, що виникли під час лікування.</p>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-country">Країна:</label>
+                                        <select id="pv-country" name="country">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="UA">Україна</option>
+                                        </select>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-fullname">ПІБ:</label>
+                                        <input type="text" id="pv-fullname" name="fullname"
+                                            placeholder="напр., Малишко Марія Сергіївна">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-gender">Стать:</label>
+                                        <select id="pv-gender" name="gender">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="male">Чоловіча</option>
+                                            <option value="female">Жіноча</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-phone">Телефон:</label>
+                                        <input type="tel" id="pv-phone" name="phone" placeholder="+380 XX XXX XX XX">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-email">Email:</label>
+                                        <input type="email" id="pv-email" name="email"
+                                            placeholder="напр., main@mail.com">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row pharmacovigilance__form-row--4">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-weight">Вага (кг):</label>
+                                        <input type="text" id="pv-weight" name="weight" placeholder="напр., 68 кг">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-height">Зріст (см):</label>
+                                        <input type="text" id="pv-height" name="height" placeholder="напр., 179 см">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-age">Вік (на момент реакції):</label>
+                                        <input type="text" id="pv-age" name="age" placeholder="напр., 37 років">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-age-unit">Вікова одиниця:</label>
+                                        <input type="text" id="pv-age-unit" name="age_unit" placeholder="xxxxxxxxx">
+                                        <small class="pharmacovigilance__form-hint">Потрібно додати коротке пояснення,
+                                            що саме тут мається на увазі</small>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="additional_info">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Додаткова
+                                                    інформація про стан:</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Оберіть, якщо
+                                                    один або декілька варіантів наявні у вас: алергії в т.ч.
+                                                    медикаментозні, порушення функції нирок, печінки, серця, перенесені
+                                                    операції, вагітність, із зазначенням терміну, тощо.</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="consent" checked>
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Дозвольте
+                                                    зв'язок з вами:</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Я даю згоду на
+                                                    обробку цієї інформації для цілей фармаконагляду та розумію, що
+                                                    представники БІХЕЛС можуть зв’язатися зі мною для отримання
+                                                    додаткової інформації.</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Block 2: Drug info -->
+                            <div class="pharmacovigilance__form-block" data-block="2">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про підозрюваний лікарський
+                                        засіб:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 2 з 3</span>
+                                </div>
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-name">Торгова назва:</label>
+                                        <input type="text" id="pv-drug-name" name="drug_name">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-form">Форма випуску:</label>
+                                        <input type="text" id="pv-drug-form" name="drug_form">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-series">Серія:</label>
+                                        <input type="text" id="pv-drug-series" name="drug_series">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row pharmacovigilance__form-row--4">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-expiry">Термін придатності:</label>
+                                        <input type="text" id="pv-drug-expiry" name="drug_expiry">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-indication">Показання до застосування:</label>
+                                        <input type="text" id="pv-drug-indication" name="drug_indication">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-method">Спосіб застосування:</label>
+                                        <input type="text" id="pv-drug-method" name="drug_method">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-dose">Доза:</label>
+                                        <input type="text" id="pv-drug-dose" name="drug_dose">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-frequency">Кратність:</label>
+                                        <input type="text" id="pv-drug-frequency" name="drug_frequency">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-storage">Умови зберігання:</label>
+                                        <input type="text" id="pv-drug-storage" name="drug_storage">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-drug-source">Джерело призначення:</label>
+                                        <input type="text" id="pv-drug-source" name="drug_source">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Block 3: Reaction info -->
+                            <div class="pharmacovigilance__form-block" data-block="3">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про підозрювану побічну реакцію
+                                        або відсутність ефективності:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 3 з 3</span>
+                                </div>
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                        <label for="pv-reaction-desc">Опишіть прояв та симптоми побічної реакції або
+                                            відсутності ефективності:</label>
+                                        <textarea id="pv-reaction-desc" name="reaction_desc"
+                                            placeholder="почніть вводити текст тут" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-reaction-date">Дата початку побічної реакції або відсутності
+                                            ефективності:</label>
+                                        <input type="date" id="pv-reaction-date" name="reaction_date"
+                                            placeholder="оберіть дату">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-reaction-time">Час початку побічної реакції або відсутності
+                                            ефективності:</label>
+                                        <input type="time" id="pv-reaction-time" name="reaction_time"
+                                            placeholder="оберіть час">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-reaction-frequency">Кратність:</label>
+                                        <input type="text" id="pv-reaction-frequency" name="reaction_frequency">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-reaction-storage">Умови зберігання:</label>
+                                        <input type="text" id="pv-reaction-storage" name="reaction_storage">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-reaction-source">Джерело призначення:</label>
+                                        <input type="text" id="pv-reaction-source" name="reaction_source">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="reaction_resolved">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Реакція
+                                                    завершилася на момент подання форми?</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Якщо реакція ще
+                                                    триває, не відмічайте цей пункт</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="reaction_measures">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Чи вживалися
+                                                    заходи щодо усунення реакції?</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Відмітьте цей
+                                                    пункт, якщо терапія була змінена або доповнена через виникнення
+                                                    побічної реакції</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="other_meds">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Прийом інших
+                                                    ліків</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Позначте, якщо на
+                                                    момент виникнення реакції ви приймали інші препарати (наприклад, для
+                                                    лікування хронічних станів)</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pharmacovigilance__form-actions">
+                                <button type="button" class="pharmacovigilance__btn-prev btn btn--transparent"
+                                    style="display:none;">
+                                    <i class="icon-Namearrow-left" aria-hidden="true"></i>
+                                    Попередній блок
+                                </button>
+                                <button type="button" class="pharmacovigilance__btn-next btn btn--black">
+                                    Наступний блок
+                                    <i class="icon-Namearrow-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Thank you screen -->
+                        <div class="pharmacovigilance__success" hidden>
+                            <div class="pharmacovigilance__success-icon">
+                                <img src="img/icons/error-icons.svg" width="48" height="48" alt="">
+                            </div>
+                            <h3 class="pharmacovigilance__success-title">Дякуємо за ваше звернення!</h3>
+                            <p class="pharmacovigilance__success-subtitle">Ваше повідомлення успішно отримано нашою
+                                командою фармаконагляду</p>
+
+                            <div class="pharmacovigilance__success-steps">
+                                <h4 class="pharmacovigilance__success-heading">Що відбувається далі?</h4>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">01</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Підтвердження (протягом 24 годин)</strong>
+                                        <p>Ви отримаєте електронний лист із підтвердженням отримання вашого звіту та
+                                            унікальним номером справи для відстеження.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">02</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Розгляд (2-5 робочих днів)</strong>
+                                        <p>Наша команда фармаконагляду проаналізує вашу інформацію. За необхідності ми
+                                            зв'яжемося з вами для уточнення деталей.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">03</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Оцінка та дії</strong>
+                                        <p>Ваш звіт буде оцінений відповідно до регуляторних вимог. При необхідності
+                                            будуть вжиті відповідні заходи для забезпечення безпеки пацієнтів.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">04</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Зворотній зв'язок</strong>
+                                        <p>Ми повідомимо вас про результати розгляду вашого звіту та будь-які
+                                            рекомендації щодо подальших дій.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pharmacovigilance__success-notice">
+                                <span class="badge">
+                                    <i class="icon-Namealert-circle-m" aria-hidden="true"></i>
+                                    Важлива інформація
+                                </span>
+                                <div class="pharmacovigilance__success-notice-body">
+                                    <ul>
+                                        <li>У разі виникнення серйозних або загрозливих для життя симптомів негайно
+                                            зверніться до лікаря або викличте швидку допомогу.</li>
+                                        <li>Не припиняйте прийом препарату без консультації з вашим лікарем.</li>
+                                        <li>Зберігайте упаковку препарату та номер серії для подальшого розслідування.
+                                        </li>
+                                    </ul>
+                                    <a href="contact.html" class="btn btn--black">Зв'язок з БІХЕЛС</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Medics -->
+                <div class="pharmacovigilance__panel" data-panel="medics">
+
+                    <!-- Info cards -->
+                    <div class="pharmacovigilance__info">
+                        <div class="pharmacovigilance__info-card">
+                            <h3 class="pharmacovigilance__info-title">Рекомендації щодо звітності</h3>
+                            <ul class="pharmacovigilance__info-list">
+                                <li>Слід повідомляти про всі підозрювані побічні реакції на препарат</li>
+                                <li>Повідомте, навіть якщо причинно-наслідковий зв'язок невизначений</li>
+                                <li>Включіть якомога більше деталей</li>
+                                <li>Надішліть додаткову інформацію, якщо вона є</li>
+                            </ul>
+                        </div>
+                        <div class="pharmacovigilance__info-card">
+                            <h3 class="pharmacovigilance__info-title">Додаткові ресурси</h3>
+                            <ul class="pharmacovigilance__info-list pharmacovigilance__info-list--files">
+                                <li><a href="/" target="_blank"><i class="icon-Namefile-m" aria-hidden="true"></i> Download Reporting
+                                        Form (PDF)</a></li>
+                                <li><a href="/" target="_blank"><i class="icon-Namefile-m" aria-hidden="true"></i> Safety Data
+                                        Sheets</a></li>
+                                <li><a href="/" target="_blank"><i class="icon-Namefile-m" aria-hidden="true"></i> Product
+                                        Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Form for medics -->
+                    <div class="pharmacovigilance__form-wrapper">
+
+                        <form class="pharmacovigilance__form" id="pharmacovigilance-form-medics">
+
+                            <!-- Block 1: Source info -->
+                            <div class="pharmacovigilance__form-block pharmacovigilance__form-block--active"
+                                data-block="1">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про джерело повідомлення:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 1 з 5</span>
+                                </div>
+                                <div class="pharmacovigilance__form-definition">
+                                    <span class="badge">
+                                        <i class="icon-Namequestion-circle-m" aria-hidden="true"></i>
+                                        Визначення
+                                    </span>
+                                    <p>*Медичний працівник - лікар або інша особа, яка здобула у встановленому
+                                        законодавством порядку медичну освіту, відповідає кваліфікаційним вимогам,
+                                        установленим центральним органом виконавчої влади у сфері охорони здоров'я,
+                                        працює у закладі охорони здоров'я або як фізична особа – підприємець.</p>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-country">Країна:</label>
+                                        <select id="pv-med-country" name="country">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="UA">Україна</option>
+                                        </select>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-phone">Телефон:</label>
+                                        <input type="tel" id="pv-med-phone" name="phone"
+                                            placeholder="+380 XX XXX XX XX">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-email">Email:</label>
+                                        <input type="email" id="pv-med-email" name="email"
+                                            placeholder="напр., main@mail.com">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                        <label for="pv-med-initials">Ініціали джерела повідомлення:</label>
+                                        <input type="text" id="pv-med-initials" name="initials">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                        <label for="pv-med-facility">Назва закладу охорони здоров’я або організації
+                                            джерела повідомлення:</label>
+                                        <input type="text" id="pv-med-facility" name="facility">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                        <label for="pv-med-qualification">Кваліфікація джерела повідомлення:</label>
+                                        <input type="text" id="pv-med-qualification" name="qualification">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="consent" checked>
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Дозвольте
+                                                    зв'язок з вами:</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Я даю згоду на
+                                                    обробку цієї інформації для цілей фармаконагляду та розумію, що
+                                                    представники БІХЕЛС можуть зв’язатися зі мною для отримання
+                                                    додаткової інформації.</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Block 2: Patient info -->
+                            <div class="pharmacovigilance__form-block" data-block="2">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про пацієнта:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 2 з 5</span>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-fullname">ПІБ:</label>
+                                        <input type="text" id="pv-med-pat-fullname" name="patient_fullname"
+                                            placeholder="напр., Малишко Марія Сергіївна">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-gender">Стать:</label>
+                                        <select id="pv-med-pat-gender" name="patient_gender">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="male">Чоловіча</option>
+                                            <option value="female">Жіноча</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row pharmacovigilance__form-row--4">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-weight">Вага (кг):</label>
+                                        <input type="text" id="pv-med-pat-weight" name="patient_weight"
+                                            placeholder="напр., 68 кг">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-height">Зріст (см):</label>
+                                        <input type="text" id="pv-med-pat-height" name="patient_height"
+                                            placeholder="напр., 179 см">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-age">Вік (на момент реакції):</label>
+                                        <input type="text" id="pv-med-pat-age" name="patient_age"
+                                            placeholder="напр., 37 років">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-pat-age-unit">Вікова одиниця:</label>
+                                        <input type="text" id="pv-med-pat-age-unit" name="patient_age_unit"
+                                            placeholder="xxxxxxxxx">
+                                        <small class="pharmacovigilance__form-hint">Потрібно додати коротке пояснення,
+                                            що саме тут мається на увазі</small>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="patient_additional_info">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Додаткова
+                                                    інформація про стан:</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Оберіть, якщо
+                                                    один або декілька варіантів наявні у вас: алергії в т.ч.
+                                                    медикаментозні, порушення функції нирок, печінки, серця, перенесені
+                                                    операції, вагітність, із зазначенням терміну, тощо.</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-newsection">
+
+                                    <h4 class="pharmacovigilance__form-subtitle">Інформація у випадку смерті пацієнта
+                                    </h4>
+
+                                    <div class="pharmacovigilance__form-row">
+                                        <div class="pharmacovigilance__form-group">
+                                            <label for="pv-med-death-date">Дата смерті: </label>
+                                            <input type="date" id="pv-med-death-date" name="death_date"
+                                                placeholder="оберіть дату">
+                                        </div>
+                                        <div class="pharmacovigilance__form-group">
+                                            <label for="pv-med-death-cause">Причина смерті:</label>
+                                            <input type="text" id="pv-med-death-cause" name="death_cause">
+                                        </div>
+                                        <div class="pharmacovigilance__form-group">
+                                            <label for="pv-med-autopsy">Чи була проведена аутопсія?</label>
+                                            <input type="text" id="pv-med-autopsy" name="autopsy">
+                                        </div>
+                                    </div>
+
+                                    <div class="pharmacovigilance__form-row">
+                                        <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                            <label for="pv-med-death-comment">Коментар:</label>
+                                            <textarea id="pv-med-death-comment" name="death_comment"
+                                                placeholder="почніть вводити текст тут" rows="5"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Block 3: Case info -->
+                            <div class="pharmacovigilance__form-block" data-block="3">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про випадок:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 3 з 5</span>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row pharmacovigilance__form-row--4">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-case-date">Дата інформації про випадок: </label>
+                                        <input type="date" id="pv-med-case-date" name="case_date"
+                                            placeholder="оберіть дату">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-case-country-fill">Країна заповнення:</label>
+                                        <select id="pv-med-case-country-fill" name="case_country_fill">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="UA">Україна</option>
+                                        </select>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-case-country">Країна випадку:</label>
+                                        <select id="pv-med-case-country" name="case_country">
+                                            <option value="" disabled selected>Зробіть вибір</option>
+                                            <option value="UA">Україна</option>
+                                        </select>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-case-age">Вік (на момент реакції):</label>
+                                        <input type="text" id="pv-med-case-age" name="case_age"
+                                            placeholder="напр., 37 років">
+                                    </div>
+                                </div>
+
+                                <h4 class="pharmacovigilance__form-subtitle">Наслідок побічної реакції або відсутності
+                                    ефективності (обрати з нижче перерахованого)</h4>
+
+                                <div class="pharmacovigilance__form-che">
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_recovery">
+                                                <span>Видужання</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_life_threat">
+                                                <span>Загроза життю</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_death">
+                                                <span>Смерть</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_hospitalization">
+                                                <span>Госпіталізація амбулаторного пацієнта</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_prolonged_hosp">
+                                                <span>Продовження термінів госпіталізації</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_disability">
+                                                <span>Стійка або значна непрацездатність чи інвалідність</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_anomaly">
+                                                <span>Вроджені аномалії чи вади розвитку</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_important">
+                                                <span>Інша важлива медична оцінка</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="pharmacovigilance__form-row">
+                                        <div
+                                            class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox pharmacovigilance__form-group--full">
+                                            <label class="pharmacovigilance__checkbox">
+                                                <input type="checkbox" name="outcome_none">
+                                                <span>Нічого з вищеперерахованого (вкажіть власну відповідь)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="pharmacovigilance__form-row">
+                                        <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                            <label for="pv-med-own-answer">Власна відповідь:</label>
+                                            <textarea id="pv-med-own-answer" name="own_answer"
+                                                placeholder="почніть вводити текст тут" rows="5"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Block 4: Drug info -->
+                            <div class="pharmacovigilance__form-block" data-block="4">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про підозрюваний лікарський
+                                        засіб:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 4 з 5</span>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-name">Торгова назва:</label>
+                                        <input type="text" id="pv-med-drug-name" name="drug_name">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-form">Форма випуску:</label>
+                                        <input type="text" id="pv-med-drug-form" name="drug_form">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-series">Серія:</label>
+                                        <input type="text" id="pv-med-drug-series" name="drug_series">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row pharmacovigilance__form-row--4">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-expiry">Термін придатності:</label>
+                                        <input type="text" id="pv-med-drug-expiry" name="drug_expiry">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-indication">Показання до застосування:</label>
+                                        <input type="text" id="pv-med-drug-indication" name="drug_indication">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-method">Спосіб застосування:</label>
+                                        <input type="text" id="pv-med-drug-method" name="drug_method">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-dose">Доза:</label>
+                                        <input type="text" id="pv-med-drug-dose" name="drug_dose">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-frequency">Кратність:</label>
+                                        <input type="text" id="pv-med-drug-frequency" name="drug_frequency">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-storage">Умови зберігання:</label>
+                                        <input type="text" id="pv-med-drug-storage" name="drug_storage">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-drug-source">Джерело призначення:</label>
+                                        <input type="text" id="pv-med-drug-source" name="drug_source">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Block 5: Reaction info -->
+                            <div class="pharmacovigilance__form-block" data-block="5">
+                                <div class="pharmacovigilance__form-header">
+                                    <h3 class="pharmacovigilance__form-title">Інформація про підозрювану побічну реакцію
+                                        або відсутність ефективності:</h3>
+                                    <span class="pharmacovigilance__form-step">Блок 5 з 5</span>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--full">
+                                        <label for="pv-med-reaction-desc">Опишіть прояв та симптоми побічної реакції або
+                                            відсутності ефективності:</label>
+                                        <textarea id="pv-med-reaction-desc" name="reaction_desc"
+                                            placeholder="почніть вводити текст тут" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-reaction-date">Дата початку побічної реакції або відсутності
+                                            ефективності:</label>
+                                        <input type="date" id="pv-med-reaction-date" name="reaction_date"
+                                            placeholder="оберіть дату">
+                                    </div>
+                                    <div class="pharmacovigilance__form-group">
+                                        <label for="pv-med-reaction-time">Час початку побічної реакції або відсутності
+                                            ефективності:</label>
+                                        <input type="time" id="pv-med-reaction-time" name="reaction_time"
+                                            placeholder="оберіть час">
+                                    </div>
+                                </div>
+
+                                <div class="pharmacovigilance__form-row">
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="med_reaction_resolved">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Реакція завершилася на момент подання форми?</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Якщо реакція ще триває, не відмічайте цей пункт</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="med_reaction_measures">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Чи вживалися заходи щодо усунення реакції?</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Відмітьте цей пункт, якщо терапія була змінена або доповнена
+                                                    через виникнення побічної реакції</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="pharmacovigilance__form-group pharmacovigilance__form-group--checkbox">
+                                        <label class="pharmacovigilance__checkbox">
+                                            <input type="checkbox" name="med_other_meds">
+                                            <div class="pharmacovigilance__checkbox-content">
+                                                <span class="pharmacovigilance__checkbox-content-title">Прийом інших ліків</span>
+                                                <span class="pharmacovigilance__checkbox-content-text">Позначте, якщо на момент виникнення реакції ви приймали інші
+                                                    препарати (наприклад, для лікування хронічних станів)</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pharmacovigilance__form-actions">
+                                <button type="button" class="pharmacovigilance__btn-prev btn btn--transparent"
+                                    style="display:none;">
+                                    <i class="icon-Namearrow-left" aria-hidden="true"></i>
+                                    Попередній блок
+                                </button>
+                                <button type="button" class="pharmacovigilance__btn-next btn btn--black">
+                                    Наступний блок
+                                    <i class="icon-Namearrow-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Thank you screen -->
+                        <div class="pharmacovigilance__success" hidden>
+                            <div class="pharmacovigilance__success-icon">
+                                <img src="img/icons/error-icons.svg" width="48" height="48" alt="">
+                            </div>
+                            <h3 class="pharmacovigilance__success-title">Дякуємо за професійний звіт!</h3>
+                            <p class="pharmacovigilance__success-subtitle">Ваш звіт успішно отримано відділом
+                                фармаконагляду</p>
+
+                            <div class="pharmacovigilance__success-steps">
+                                <h4 class="pharmacovigilance__success-heading">Процес обробки професійного звіту</h4>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">01</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Реєстрація та підтвердження</strong>
+                                        <p>Протягом 24 годин ви отримаєте підтвердження з номером справи та інформацією
+                                            про відповідального спеціаліста з фармаконагляду.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">02</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Медичний огляд (3-7 днів)</strong>
+                                        <p>Кваліфіковані фахівці проведуть медичний огляд випадку. Ми можемо зв'язатися
+                                            з вами для додаткової клінічної інформації.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">03</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Оцінка причинності</strong>
+                                        <p>Проводиться детальна оцінка причинно-наслідкового зв'язку між препаратом та
+                                            побічною реакцією згідно з WHO-UMC критеріями.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">04</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Регуляторне повідомлення</strong>
+                                        <p>Звіт буде передано до відповідних регуляторних органів у встановлені строки
+                                            відповідно до законодавчих вимог.</p>
+                                    </div>
+                                </div>
+                                <div class="pharmacovigilance__success-step">
+                                    <span class="pharmacovigilance__success-num">05</span>
+                                    <div class="pharmacovigilance__success-step-box">
+                                        <strong>Зворотній зв'язок</strong>
+                                        <p>Ви отримаєте детальний звіт про результати оцінки та будь-які рекомендації
+                                            щодо моніторингу пацієнта.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pharmacovigilance__success-notice">
+                                <span class="badge">
+                                    <i class="icon-Namealert-circle-m" aria-hidden="true"></i>
+                                    Важлива інформація
+                                </span>
+                                <div class="pharmacovigilance__success-notice-body">
+                                    <ul>
+                                        <li>У разі виникнення серйозних або загрозливих для життя симптомів негайно
+                                            зверніться до лікаря або викличте швидку допомогу.</li>
+                                        <li>Не припиняйте прийом препарату без консультації з вашим лікарем.</li>
+                                        <li>Зберігайте упаковку препарату та номер серії для подальшого розслідування.
+                                        </li>
+                                    </ul>
+                                    <a href="contact.html" class="btn btn--black">Зв'язок з БІХЕЛС</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer__body" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+                <!-- Контакти -->
+                <address class="footer__contacts">
+                    <p class="footer__contacts-label">НАША АДРЕСА:</p>
+                    <p class="footer__contacts-address">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+
+                    <p class="footer__contacts-label">ТЕЛЕФОНИ:</p>
+                    <ul class="footer__contacts-list" role="list">
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380675474099" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (067) 547 40 99
+                            </a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380445926862" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (044) 592 68 62
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__contacts-label">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua" class="footer__contacts-link footer__contacts-link--email">
+                        <i class="icon-Nameemail-m" aria-hidden="true"></i>
+                        info@behealth.com.ua
+                    </a>
+                </address>
+
+                <!-- Навігація -->
+                <div class="footer__nav">
+
+                    <nav class="footer__nav-col" aria-label="Клієнтам">
+                        <h3 class="footer__nav-heading">Клієнтам</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item">
+                                <a href="/" class="footer__nav-link">Головна
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/about" class="footer__nav-link">Про компанію
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/vacancies" class="footer__nav-link">Кар'єра
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/blog" class="footer__nav-link">Блог
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/catalog" class="footer__nav-link">Каталог
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/contacts" class="footer__nav-link">Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer__nav-col" aria-label="Юридична інформація">
+                        <h3 class="footer__nav-heading">Юридична інформація</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item">
+                                <a href="/privacy-policy" class="footer__nav-link">Політика конфіденційності
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/cookie-policy" class="footer__nav-link">Сторінка Cookie
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/public-offer" class="footer__nav-link">Публічна оферта
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="/pharmacovigilance" class="footer__nav-link">Фармаконагляд
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+            <!-- Підвал -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-contents">
+                    <p class="footer__bottom-copy">
+                        <small>© 2026 ТОВ «Біхелс». Всі права захищені.</small>
+                    </p>
+                    <p class="footer__bottom-legal">
+                        <small>Медична практика здійснюється на підставі Ліцензії Міністерства охорони здоров'я України
+                            серія АЕ №&nbsp;285419 від 14.12.2023 р. Акредитаційний сертифікат серія МЗ №&nbsp;014782
+                            (Вища категорія). Код ЄДРПОУ: 43258791. Юридична адреса: 01001, Україна, м. Київ, вул.
+                            Інститутська, 28, офіс 402. Платник податку на прибуток на загальних підставах.
+                            Самолікування може бути шкідливим для вашого здоров'я. Інформація на цьому сайті надана
+                            виключно з освітньою метою і не замінює професійну медичну консультацію, діагностику або
+                            лікування. Завжди звертайтесь до свого лікаря або іншого кваліфікованого фахівця з
+                            будь-якими питаннями щодо стану здоров'я.</small>
+                    </p>
+                </div>
+                <p class="footer__bottom-dev">
+                    Designed by <a href="https://shapoval.agency" class="footer__bottom-dev-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/logo-brand.svg" width="140" height="24" alt="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Lib Scripts -->
+    <script src="js/lib/lenis.min.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/fancybox.umd.js"></script>
+    <script src="js/lib/simpleParallax.min.js"></script>
+    <script src="js/lib/aos.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
