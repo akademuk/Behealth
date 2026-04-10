@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behealth — Публічна оферта</title>
+
+    <!-- Lib Styles -->
+    <link rel="stylesheet" href="css/lib/swiper.min.css">
+    <link rel="stylesheet" href="css/lib/fancybox.min.css">
+    <link rel="stylesheet" href="css/lib/aos.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+
+            <nav class="nav" aria-label="Головна навігація">
+                <a href="/" class="nav__logo">
+                    <img src="img/logo.svg" width="150" height="23" alt="Behealth Logo">
+                </a>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Головна</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button" aria-expanded="false"
+                            aria-haspopup="true">
+                            Про компанію
+                            <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="nav__submenu">
+                            <li><a href="#" class="nav__sublink">Місія та візія <i class="icon-Namearrow-right-down"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Корпоративні цінності <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Сторінка фармаконагляду <i
+                                        class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Кар'єра</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__item nav__item--has-sub">
+                        <button class="nav__link nav__link--sub-trigger" type="button">
+                            Каталог
+                            <i class="icon-Namearrow_down"></i>
+                        </button>
+                        <ul class="nav__submenu nav__submenu--catalog">
+                            <li><a href="#" class="nav__sublink">Усі препарати <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я нирок <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Чоловіче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ШКТ <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Жіноче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Здоров'я ендо-системи <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Дитяче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Вітаміни та мінерали <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="nav__sublink">Гриби <i class="icon-Namearrow-right-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакти</a>
+                    </li>
+                </ul>
+                <a href="/vacancies" class="nav__link-vacancies btn btn--black">Вакансії
+                    <i class="icon-Namearrow-right-up" aria-hidden="true"></i>
+                </a>
+                <button class="burger btn btn--transparent" type="button" aria-label="Відкрити меню"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    Меню
+                    <i class="icon-Nameplus" aria-hidden="true"></i>
+                </button>
+            </nav>
+
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Головна</a></li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+                            Про компанію <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Місія та візія <i class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Корпоративні цінності <i class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Сторінка фармаконагляду <i class="icon-Namearrow-right-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Кар'єра</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Блог</a></li>
+                    <li class="mobile-menu__item mobile-menu__item--has-sub">
+                        <button class="mobile-menu__link mobile-menu__link--sub-trigger" type="button">
+                            Каталог <i class="icon-Namearrow_down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="mobile-menu__submenu">
+                            <li><a href="#" class="mobile-menu__sublink">Усі препарати <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Чоловіче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Жіноче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я нирок <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ШКТ <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Здоров'я ендо-системи <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Вітаміни та мінерали <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Дитяче здоров'я <i class="icon-Namearrow-right-down"></i></a></li>
+                            <li><a href="#" class="mobile-menu__sublink">Гриби <i class="icon-Namearrow-right-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакти</a></li>
+                </ul>
+                <address class="mobile-menu__address">
+                    <p class="mobile-menu__address-title">НАША АДРЕСА:</p>
+                    <p class="mobile-menu__address-text">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+                    <p class="mobile-menu__address-title">ТЕЛЕФОНИ:</p>
+                    <a href="tel:+380675474099" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i class="icon-Namephone-m" aria-hidden="true"></i> +38 (067) 547 40 99</a>
+                    <a href="tel:+380445926862" class="mobile-menu__contact-link mobile-menu__contact-link--phone"><i class="icon-Namephone-m" aria-hidden="true"></i> +38 (044) 592 68 62</a>
+                    <p class="mobile-menu__address-title">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua" class="mobile-menu__contact-link mobile-menu__contact-link--email"><i class="icon-Nameemail-m" aria-hidden="true"></i> info@behealth.com.ua</a>
+                </address>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <section class="hero--big hero--big--vacancy hero--big--contact">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="/" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item" aria-current="page">
+                            <span class="breadcrumbs__text">Публічна оферта</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero--big__content">
+                    <h1>Публічна оферта</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="article">
+            <div class="container">
+
+                <!-- Sidebar -->
+                <aside class="article__sidebar">
+                    <div class="article__sidebar-list">
+                        <p class="article__sidebar-label">Інші розділи:</p>
+                        <a href="privacy-policy.html" class="article__sidebar-link btn btn--transparent">Політика конфіденційності</a>
+                        <a href="public-offer.html" class="article__sidebar-link article__sidebar-link--active btn btn--transparent">Публічна оферта</a>
+                        <a href="cookie-policy.html" class="article__sidebar-link btn btn--transparent">Cookie</a>
+                    </div>
+                </aside>
+
+                <!-- Content -->
+                <div class="article__content">
+                    <div class="article__content-title">
+                        <span class="badge">
+                            <i class="icon-Namecalendar" aria-hidden="true"></i>
+                            Опубліковано: 10.03.2026
+                        </span>
+                    </div>
+
+                    <div class="article__content-description">
+                        <p><strong>Цей документ є офіційною публічною офертою ТОВ «Біхелс» (далі — «Компанія») та визначає умови надання послуг через вебсайт (далі — «Сайт»).</strong></p>
+                        <p>Оформлення замовлення або використання послуг Сайту означає повне прийняття умов цієї оферти.</p>
+                    </div>
+
+                    <div class="article__content-text">
+                        <h3>1. Загальні положення</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Ця публічна оферта є офіційною пропозицією Компанії укласти договір про надання послуг.</li>
+                                <li>Акцептом оферти є оформлення замовлення, реєстрація на Сайті або фактичне використання послуг Компанії.</li>
+                                <li>Оферта набуває чинності з моменту її розміщення на Сайті та діє до моменту її відкликання Компанією.</li>
+                                <li>Компанія залишає за собою право вносити зміни до умов оферти без попереднього повідомлення.</li>
+                            </ol>
+                        </div>
+
+                        <h3>2. Предмет договору</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Компанія зобов'язується надати послуги, зазначені на Сайті, а Замовник зобов'язується оплатити та прийняти такі послуги.</li>
+                                <li>Перелік, обсяг і вартість послуг визначаються на відповідних сторінках Сайту.</li>
+                                <li>Компанія має право залучати третіх осіб для виконання зобов'язань за цим договором.</li>
+                            </ol>
+                        </div>
+
+                        <h3>3. Порядок надання послуг</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Замовлення послуг здійснюється через Сайт шляхом заповнення відповідної форми або через засоби зв'язку, зазначені на Сайті.</li>
+                                <li>Після оформлення замовлення Компанія підтверджує його та погоджує строки надання послуг.</li>
+                                <li>Компанія надає послуги протягом строку, зазначеного на Сайті або узгодженого з Замовником.</li>
+                                <li>Послуга вважається наданою з моменту підписання акта приймання-передачі або фактичного надання послуги.</li>
+                            </ol>
+                        </div>
+
+                        <h3>4. Вартість послуг та порядок оплати</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Вартість послуг визначається на відповідних сторінках Сайту та може бути змінена Компанією в односторонньому порядку.</li>
+                                <li>Оплата здійснюється у безготівковій формі через платіжні системи, зазначені на Сайті, або іншим узгодженим способом.</li>
+                                <li>Зміна вартості послуг після оформлення та оплати замовлення не впливає на вартість вже оплачених послуг.</li>
+                            </ol>
+                        </div>
+
+                        <h3>5. Права та обов'язки сторін</h3>
+                        <div class="article__content-description">
+                            <p><strong>Компанія зобов'язується:</strong></p>
+                            <ul>
+                                <li>надавати послуги якісно та вчасно;</li>
+                                <li>забезпечувати конфіденційність персональних даних Замовника;</li>
+                                <li>надавати Замовнику необхідну інформацію про послуги.</li>
+                            </ul>
+                            <p><strong>Замовник зобов'язується:</strong></p>
+                            <ul>
+                                <li>надавати достовірну інформацію під час оформлення замовлення;</li>
+                                <li>своєчасно оплачувати послуги;</li>
+                                <li>дотримуватись умов цієї оферти.</li>
+                            </ul>
+                        </div>
+
+                        <h3>6. Відповідальність сторін</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Сторони несуть відповідальність за невиконання або неналежне виконання зобов'язань відповідно до чинного законодавства України.</li>
+                                <li>Компанія не несе відповідальності за збитки, завдані Замовнику внаслідок неправильного використання послуг.</li>
+                                <li>Сторони звільняються від відповідальності у разі настання обставин непереборної сили (форс-мажор).</li>
+                            </ol>
+                        </div>
+
+                        <h3>7. Повернення коштів</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Повернення коштів здійснюється у випадках, передбачених чинним законодавством України.</li>
+                                <li>Для повернення коштів Замовник має звернутися до Компанії з письмовою заявою.</li>
+                                <li>Повернення здійснюється протягом 14 робочих днів з моменту підтвердження заявки на повернення.</li>
+                            </ol>
+                        </div>
+
+                        <h3>8. Інтелектуальна власність</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Усі матеріали, розміщені на Сайті, є інтелектуальною власністю Компанії або використовуються на законних підставах.</li>
+                                <li>Використання матеріалів Сайту без письмової згоди Компанії забороняється.</li>
+                            </ol>
+                        </div>
+
+                        <h3>9. Конфіденційність</h3>
+                        <div class="article__content-description">
+                            <p>Обробка персональних даних Замовника здійснюється відповідно до <a href="privacy-policy.html">Політики конфіденційності</a>, яка є невід'ємною частиною цієї оферти.</p>
+                        </div>
+
+                        <h3>10. Заключні положення</h3>
+                        <div class="article__content-description">
+                            <ol>
+                                <li>Ця оферта регулюється чинним законодавством України.</li>
+                                <li>Усі спори, що виникають у зв'язку з виконанням цієї оферти, вирішуються шляхом переговорів, а в разі недосягнення згоди — у судовому порядку.</li>
+                                <li>Якщо будь-яке положення цієї оферти визнається недійсним, це не впливає на дійсність інших положень.</li>
+                                <li>Компанія залишає за собою право змінювати умови цієї оферти. Актуальна версія завжди доступна на Сайті.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer__body" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+                <address class="footer__contacts">
+                    <p class="footer__contacts-label">НАША АДРЕСА:</p>
+                    <p class="footer__contacts-address">03110, м.Київ, вул. Солом'янська 3, офіс 41</p>
+
+                    <p class="footer__contacts-label">ТЕЛЕФОНИ:</p>
+                    <ul class="footer__contacts-list" role="list">
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380675474099" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (067) 547 40 99
+                            </a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a href="tel:+380445926862" class="footer__contacts-link footer__contacts-link--phone">
+                                <i class="icon-Namephone-m" aria-hidden="true"></i>
+                                +38 (044) 592 68 62
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__contacts-label">EMAIL-ПІДТРИМКА:</p>
+                    <a href="mailto:info@behealth.com.ua" class="footer__contacts-link footer__contacts-link--email">
+                        <i class="icon-Nameemail-m" aria-hidden="true"></i>
+                        info@behealth.com.ua
+                    </a>
+                </address>
+
+                <div class="footer__nav">
+                    <nav class="footer__nav-col" aria-label="Клієнтам">
+                        <h3 class="footer__nav-heading">Клієнтам</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item"><a href="/" class="footer__nav-link">Головна</a></li>
+                            <li class="footer__nav-item"><a href="/about" class="footer__nav-link">Про компанію</a></li>
+                            <li class="footer__nav-item"><a href="/vacancies" class="footer__nav-link">Кар'єра</a></li>
+                            <li class="footer__nav-item"><a href="/blog" class="footer__nav-link">Блог</a></li>
+                            <li class="footer__nav-item"><a href="/catalog" class="footer__nav-link">Каталог</a></li>
+                            <li class="footer__nav-item"><a href="/contacts" class="footer__nav-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav-col" aria-label="Юридична інформація">
+                        <h3 class="footer__nav-heading">Юридична інформація</h3>
+                        <ul class="footer__nav-list" role="list">
+                            <li class="footer__nav-item"><a href="privacy-policy.html" class="footer__nav-link">Політика конфіденційності</a></li>
+                            <li class="footer__nav-item"><a href="cookie-policy.html" class="footer__nav-link">Сторінка Cookie</a></li>
+                            <li class="footer__nav-item"><a href="public-offer.html" class="footer__nav-link">Публічна оферта</a></li>
+                            <li class="footer__nav-item"><a href="pharmacovigilance.html" class="footer__nav-link">Фармаконагляд</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-contents">
+                    <p class="footer__bottom-copy">
+                        <small>© 2026 ТОВ «Біхелс». Всі права захищені.</small>
+                    </p>
+                    <p class="footer__bottom-legal">
+                        <small>Медична практика здійснюється на підставі Ліцензії Міністерства охорони здоров'я України
+                            серія АЕ №&nbsp;285419 від 14.12.2023 р. Акредитаційний сертифікат серія МЗ №&nbsp;014782
+                            (Вища категорія). Код ЄДРПОУ: 43258791. Юридична адреса: 01001, Україна, м. Київ, вул.
+                            Інститутська, 28, офіс 402. Платник податку на прибуток на загальних підставах.
+                            Самолікування може бути шкідливим для вашого здоров'я. Інформація на цьому сайті надана
+                            виключно з освітньою метою і не замінює професійну медичну консультацію, діагностику або
+                            лікування. Завжди звертайтесь до свого лікаря або іншого кваліфікованого фахівця з
+                            будь-якими питаннями щодо стану здоров'я.</small>
+                    </p>
+                </div>
+                <p class="footer__bottom-dev">
+                    Designed by <a href="https://shapoval.agency" class="footer__bottom-dev-link" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/logo-brand.svg" width="140" height="24" alt="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Lib Scripts -->
+    <script src="js/lib/lenis.min.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/fancybox.umd.js"></script>
+    <script src="js/lib/simpleParallax.min.js"></script>
+    <script src="js/lib/aos.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

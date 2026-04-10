@@ -4318,23 +4318,110 @@ select {
   color: #37514A;
 }
 
+.article--legal {
+  padding: 48px 16px;
+}
 
+.article--legal .container {
+  gap: 24px;
+}
 
+.article--legal .article__sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
 
+.article--legal .article__sidebar-label {
+  color: #1F1D1D;
+  font-size: var(--fs-18);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
+.article--legal .article__sidebar-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
 
+.article--legal .article__sidebar-list ul li a {
+  color: #1F1D1D;
+}
 
+.article--legal .article__sidebar-list ul li a.article__sidebar-link--active {
+    color: #fff;
+} 
 
+.article--legal .article__sidebar-list ul li a:hover {
+  color: #fff;
+}
 
+.article--legal .article__content {
+  gap: 0;
+}
 
+.article--legal .article__content-title{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  flex-direction: row;
+  color: #4D4B4B;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
 
+.article--legal .article__content-text {
+  gap: 0;
+}
 
+.article--legal .article__content-description strong {
+  margin-bottom: 32px;
+  color: #1F1D1D;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+  letter-spacing: 0;
+  display: block;
+}
 
+.article--legal .article__content-text h3 {
+  color:#1F1D1D;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
 
+.article--legal .article__content-text .article__content-description {
+  color: #1F1D1D;
+  font-size: var(--fs-18);
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
-
-
-
+.article--legal .article__content-text ul li {
+  color: #1F1D1D;
+  font-size: var(--fs-18);
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
 
 
@@ -5531,6 +5618,10 @@ select {
 
   .pharmacovigilance__form-che {
     margin-top: -8px;
+  }
+
+  .article--legal .article__sidebar-list ul {
+    gap: 16px;
   }
 }
 
