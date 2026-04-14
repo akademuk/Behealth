@@ -220,8 +220,7 @@ body {
   height: 100%;
   z-index: 2;
   background:
-    linear-gradient(0deg, rgba(55, 81, 74, 0.65) 0%, rgba(55, 81, 74, 0.65) 100%),
-    radial-gradient(140.12% 141.16% at 93.86% 105.41%, rgba(55, 81, 74, 0.85) 0%, rgba(55, 81, 74, 0.00) 100%);
+    linear-gradient(0deg, rgba(55, 81, 74, 0.9) 0%, rgba(55, 81, 74, 0.9) 100%);
 }
 
 .hero-bg video {
@@ -898,7 +897,7 @@ body {
   display: flex;
   align-items: center;
   align-self: stretch;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex: 1 0 0;
 }
 
@@ -1208,6 +1207,7 @@ textarea {
   font-size: 16px;
   font-weight: var(--fw-medium);
   line-height: 1.4;
+  resize: none;
   letter-spacing: var(--ls-0);
 }
 
@@ -4904,6 +4904,9 @@ select {
   border-color: #1F1D1D;
 }
 
+.contact--section__left-address {
+  font-style: normal;
+}
 
 
 
@@ -4993,8 +4996,8 @@ select {
     width: 1515px;
     overflow: hidden;
     position: absolute;
-    bottom: 86px;
-    left: 65%;
+    bottom: -16px;
+    left: 82%;
     transform: translateX(-50%);
   }
 
@@ -5880,6 +5883,7 @@ select {
 
   .hero .container {
     z-index: 11;
+    min-height: 809px;
   }
 
   /* 2 images desktop height */
