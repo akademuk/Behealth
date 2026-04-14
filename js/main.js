@@ -329,6 +329,41 @@ window.addEventListener('resize', initMissionTeamSwiper);
 // });
 
 /* ========================================
+   Blog Page — Tab Filter
+   ======================================== */
+
+(function () {
+  const tabs     = document.querySelectorAll('.blog--page-tab');
+  const articles = document.querySelectorAll('.blog--page-contents-article');
+
+  if (!tabs.length || !articles.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // активна вкладка
+      tabs.forEach(t => {
+        t.classList.remove('blog--page-tab--active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('blog--page-tab--active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.textContent.trim().toLowerCase();
+
+      articles.forEach(article => {
+        if (filter === 'всі категорії') {
+          article.hidden = false;
+        } else {
+          const badge = article.querySelector('.blog--page-contents-article-img .badge');
+          const category = badge ? badge.textContent.trim().toLowerCase() : '';
+          article.hidden = category !== filter;
+        }
+      });
+    });
+  });
+})();
+
+/* ========================================
    Article Sidebar — Scroll Spy
    ======================================== */
 
