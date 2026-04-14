@@ -3894,7 +3894,7 @@ select {
 }
 
 .pharmacovigilance__form-definition p {
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-14);
   font-weight: var(--fw-regular);
   line-height: 1.4;
@@ -4007,7 +4007,7 @@ select {
   border: 1px solid transparent;
 }
 
-.pharmacovigilance__form-group--checkbox .pharmacovigilance__checkbox{
+.pharmacovigilance__form-group--checkbox .pharmacovigilance__checkbox {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -4023,7 +4023,7 @@ select {
 }
 
 .pharmacovigilance__checkbox-content-title {
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-16);
   font-weight: var(--fw-semibold);
   line-height: 1.4;
@@ -4049,7 +4049,7 @@ select {
   flex-wrap: wrap;
 }
 
-.pharmacovigilance__form-actions  .btn {
+.pharmacovigilance__form-actions .btn {
   min-width: 256px;
   flex: 1 0 0;
 }
@@ -4230,7 +4230,7 @@ select {
   background: #EFEDED;
 }
 
-.pharmacovigilance__form-newsection  .pharmacovigilance__form-subtitle {
+.pharmacovigilance__form-newsection .pharmacovigilance__form-subtitle {
   color: #000;
   font-size: var(--fs-24);
   font-weight: var(--fw-semibold);
@@ -4239,9 +4239,9 @@ select {
   margin-bottom: 24px;
 }
 
-.pharmacovigilance__form-newsection .pharmacovigilance__form-row:nth-last-of-type(1){
+.pharmacovigilance__form-newsection .pharmacovigilance__form-row:nth-last-of-type(1) {
   margin-top: 24px;
-} 
+}
 
 .pharmacovigilance__form-subtitle {
   color: #000;
@@ -4356,8 +4356,8 @@ select {
 }
 
 .article--legal .article__sidebar-list ul li a.article__sidebar-link--active {
-    color: #fff;
-} 
+  color: #fff;
+}
 
 .article--legal .article__sidebar-list ul li a:hover {
   color: #fff;
@@ -4367,7 +4367,7 @@ select {
   gap: 0;
 }
 
-.article--legal .article__content-title{
+.article--legal .article__content-title {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -4397,7 +4397,7 @@ select {
 }
 
 .article--legal .article__content-text h3 {
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-24);
   font-weight: var(--fw-semibold);
   line-height: 1.4;
@@ -4423,7 +4423,7 @@ select {
 }
 
 .mission-section {
-  padding: 64px 16px 32px 16px;
+  padding: 52px 16px 32px 16px;
   background: var(--color-add-200);
   overflow: hidden;
 }
@@ -4432,7 +4432,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 25px;
   align-self: stretch;
 }
 
@@ -4440,7 +4440,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 18px;
   align-self: stretch;
 }
 
@@ -4466,6 +4466,7 @@ select {
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
+  margin-bottom: 8px;
 }
 
 .mission-section__body-actions {
@@ -4480,7 +4481,7 @@ select {
   overflow: visible;
 }
 
-.mission-swiper .swiper-slide  {
+.mission-swiper .swiper-slide {
   width: 256px;
   height: 256px;
   border-radius: var(--fs-24);
@@ -4494,7 +4495,7 @@ select {
 .mission-swiper__slide-content {
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 30px 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4525,13 +4526,13 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 35px;
   align-self: stretch;
 }
 
 .science-philosophy__title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 32px;
   align-self: stretch;
   flex-wrap: wrap;
@@ -4577,7 +4578,7 @@ select {
 }
 
 .science-philosophy__slide {
-  padding: 48px 32px;
+  padding: 42px 32px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -4621,12 +4622,12 @@ select {
   padding: 32px 24px;
   flex: 1 0 0;
   border-radius: var(--radius-24);
-  background:#1F1D1D;
+  background: #1F1D1D;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 56px;
+  gap: 45px;
   align-self: stretch;
 }
 
@@ -4663,7 +4664,7 @@ select {
 .mission-vision__right {
   height: 364px;
   min-width: 256px;
-  padding: 32px 24px;
+  padding: 27px 24px;
   flex: 1 0 0;
   position: relative;
   border-radius: var(--fs-24);
@@ -4690,7 +4691,7 @@ select {
 .mission-vision__right h2 {
   position: relative;
   z-index: 2;
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-36);
   font-weight: var(--fw-semibold);
   line-height: 1.3;
@@ -4701,48 +4702,207 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 10px;
   align-self: stretch;
   position: relative;
   z-index: 2;
 }
 
-.mission-vision__description  p {
-  color:#1F1D1D;
+.mission-vision__description p {
+  color: #1F1D1D;
   font-size: var(--fs-24);
   font-weight: var(--fw-medium);
   line-height: 1.4;
   letter-spacing: 0;
 }
 
+.mission-team {
+  padding: 64px 16px;
+  background: var(--color-add-200);
+  overflow: hidden;
+}
 
+.mission-team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  align-self: stretch;
+}
 
+.mission-team__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+}
 
+.mission-team__title-texts {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 4px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
 
+.mission-team__title-content {
+  display: flex;
+  min-width: 256px;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1 0 0;
+}
 
+.mission-team__title-description {
+  display: flex;
+  min-width: 256px;
+  align-items: flex-start;
+  gap: 48px;
+  flex: 1 0 0;
+  font-size: var(--fs-24);
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
+.mission-team__title-text {
+  font-size: var(--fs-36);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
 
+.mission-team-swiper {
+  width: 100%;
+  overflow: visible;
+}
 
+.mission-team-swiper .swiper-slide {
+  width: 256px;
+  height: 256px;
+  border-radius: var(--fs-24);
+  overflow: hidden;
+}
 
+.mission-team__slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.mission-team__slide>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.mission-team__slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.50);
+  position: relative;
+}
 
+.mission-team__slide-content h3 {
+  color: var(--color-primary-10);
+  font-size: var(--fs-64);
+  font-weight: var(--fw-semibold);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
 
+.mission-team__slide-content p {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
+.mission-team__slide-content::before {
+  content: "+";
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  font-family: var(--font-primary);
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0px;
+  text-align: center;
+  border: 1.5px solid var(--color-ink-source);
+  border-radius: 99px;
+  color: var(--color-ink-source);
+  transition: 0.4s;
+  z-index: 3;
+}
 
+.cta--mission {
+  padding: 64px 16px;
+  background: var(--color-add-200);
+}
 
+.cta--mission .cta__content {
+  gap: 42px;
+}
 
+.cta--mission .cta__content-img img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(9%) saturate(1144%) hue-rotate(113deg) brightness(95%) contrast(89%);
+}
 
+.cta--mission .cta__content h2 {
+  color: var(--color-primary-source);
+}
 
+.cta--mission .cta__content-description {
+  color: #1F1D1D;
+}
 
+.cta__content-description--image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--fs-24);
+  overflow: hidden;
+  min-height: 361px;
+}
 
+.cta__content-description--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.cta--mission .cta__form-box {
+  background: var(--color-white);
+  gap: 16px;
+  padding: 24px;
+  height: 100%;
+}
 
+.cta--mission .cta__form-box .badge {
+  border-color: #37514A;
+  color: #37514A;
+}
 
+.cta--mission .cta__form-box h3 {
+  color: #1F1D1D;
+}
 
+.cta--mission .cta__form-group label {
+  color: #1F1D1D;
+}
 
-
-
+.cta--mission .cta__form .btn {
+  border-color: #1F1D1D;
+}
 
 
 
@@ -5873,7 +6033,7 @@ select {
   .pharmacovigilance .container {
     gap: 40px;
   }
-  
+
   .pharmacovigilance__tab img {
     display: flex;
     width: 20px;
@@ -5888,13 +6048,13 @@ select {
     gap: 8px;
   }
 
-  .pharmacovigilance__tab:hover img, 
+  .pharmacovigilance__tab:hover img,
   .pharmacovigilance__tab:active img {
     filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
   }
 
-  .pharmacovigilance__tab--active img{
-     filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
+  .pharmacovigilance__tab--active img {
+    filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
   }
 
   .pharmacovigilance__panel--active {
@@ -5986,11 +6146,11 @@ select {
   }
 
   .mission-section {
-    padding: 128px 52px 64px 52px;
+    padding: 92px 52px 64px 52px;
   }
 
   .mission-section .container {
-    gap: 64px;
+    gap: 56px;
   }
 
   .mission-swiper .swiper-slide {
@@ -5999,7 +6159,7 @@ select {
   }
 
   .mission-swiper__slide-content {
-    padding: 32px;
+    padding: 26px 32px;
   }
 
   .science-philosophy {
@@ -6007,11 +6167,11 @@ select {
   }
 
   .science-philosophy .container {
-    gap: 64px;
+    gap: 46px;
   }
 
   .science-philosophy__title-left {
-    gap: 32px;
+    gap: 20px;
   }
 
   .science-philosophy__swiper .swiper-slide {
@@ -6047,7 +6207,7 @@ select {
     height: 160px;
   }
 
-  .mission-vision__logo  img {
+  .mission-vision__logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -6060,6 +6220,68 @@ select {
 
   .mission-vision__description {
     max-width: 476px;
+  }
+
+  .mission-team {
+    padding: 60px 52px;
+  }
+
+  .mission-team .mission-section__body-actions {
+    display: none;
+  }
+
+  .mission-team .container {
+    gap: 55px;
+  }
+
+  .mission-team__title-texts {
+    gap: 24px;
+  }
+
+  .mission-team-swiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .mission-team-swiper .swiper-slide {
+    flex: 1 0 0;
+    width: auto;
+    height: 376px;
+    min-width: 376px;
+  }
+
+  .mission-team__slide-content {
+    padding: 48px;
+  }
+
+  .swiper-slide--small {
+    width: 376px;
+    height: 376px;
+  }
+
+  .cta--mission {
+    padding: 64px 52px;
+  }
+
+  .cta--mission .cta__content {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .cta__content-description--image {
+    display: none;
+  }
+
+  .cta--mission .cta__form-box {
+    margin-top: 85px;
+    margin-bottom: -115px;
+    gap: 40px;
+    border-radius: 24px;
+  }
+
+  .mission-section__title {
+    gap: 10px;
   }
 }
 

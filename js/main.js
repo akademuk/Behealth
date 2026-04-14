@@ -283,6 +283,32 @@ const sciencePhilosophySwiper = new Swiper('.science-philosophy__swiper', {
   },
 });
 
+let missionTeamSwiper = null;
+
+function initMissionTeamSwiper() {
+  if (window.innerWidth < 1280) {
+    if (!missionTeamSwiper) {
+      missionTeamSwiper = new Swiper('.mission-team-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        loop: false,
+        navigation: {
+          nextEl: '.mission-team-swiper__button-next',
+          prevEl: '.mission-team-swiper__button-prev',
+        },
+      });
+    }
+  } else {
+    if (missionTeamSwiper) {
+      missionTeamSwiper.destroy(true, true);
+      missionTeamSwiper = null;
+    }
+  }
+}
+
+initMissionTeamSwiper();
+window.addEventListener('resize', initMissionTeamSwiper);
+
 // Приклад:
 // const swiper = new Swiper('.swiper', {
 //   loop: true,

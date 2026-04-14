@@ -325,8 +325,10 @@
                 <div class="mission-vision__right">
                     <h2>Наша мета</h2>
                     <div class="mission-vision__description">
-                        <p>Стійкий розвиток, розширення партнерств та впровадження інноваційних рішень, що відповідають викликам сучасної медицини.</p>
-                        <p>Ми бачимо БІХЕЛС надійним партнером у сфері медицини та естетики, який задає стандарти якості та формує довіру на ринку.</p>
+                        <p>Стійкий розвиток, розширення партнерств та впровадження інноваційних рішень, що відповідають
+                            викликам сучасної медицини.</p>
+                        <p>Ми бачимо БІХЕЛС надійним партнером у сфері медицини та естетики, який задає стандарти якості
+                            та формує довіру на ринку.</p>
                     </div>
                     <div class="mission-vision__image">
                         <img src="img/mission-vision.jpg" width="876" height="751" loading="lazy" alt="">
@@ -338,14 +340,30 @@
         <div class="mission-team">
             <div class="container">
                 <span class="badge">Наша команда</span>
-
                 <div class="mission-team__title">
-                    <p class="mission-team__title-text">
-                        Команда є нашою головною силою. БІХЕЛС об'єднує людей з різними поглядами та характерами, ми пишаємось що створили сприятливу атмосферу для професійного зростання і розвитку кожного співробітника. 
-                    </p>
-                    <p class="mission-team__title-description">
-                        Ми цінуємо та підтримуємо співробітників у реалізації їхніх ідей та амбіцій, ми відкриті до інновацій та готові швидко реагувати на нові виклики.
-                    </p>
+                    <div class="mission-team__title-texts">
+                        <div class="mission-team__title-content">
+                            <p class="mission-team__title-text">
+                                Команда є нашою головною силою. БІХЕЛС об'єднує людей з різними поглядами та
+                                характерами, ми пишаємось що створили сприятливу атмосферу для професійного зростання і
+                                розвитку кожного співробітника.
+                            </p>
+                        </div>
+                        <p class="mission-team__title-description">
+                            Ми цінуємо та підтримуємо співробітників у реалізації їхніх ідей та амбіцій, ми відкриті до
+                            інновацій та готові швидко реагувати на нові виклики.
+                        </p>
+                    </div>
+                    <div class="mission-section__body-actions">
+                        <button class="mission-team-swiper__button-next swiper-button-next" type="button"
+                            aria-label="Наступний слайд">
+                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
+                        </button>
+                        <button class="mission-team-swiper__button-prev swiper-button-prev" type="button"
+                            aria-label="Попередній слайд">
+                            <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="mission-team-swiper swiper">
@@ -366,8 +384,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="mission-team__slide">
-                                
+                            <div class="mission-team__slide mission-team__slide-content">
+                                <h3>500+</h3>
+                                <p>Більше 500 співробітників БІХЕЛС вже приєдналися до нашої команди!</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -380,7 +399,53 @@
             </div>
         </div>
 
+        <section class="cta cta--mission" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta__content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="cta__content-img">
+                        <img src="img/logo-white.svg" width="112" height="85" alt="Behealth Logo">
+                    </div>
+                    <h2>Приєднуйтесь до команди БІХЕЛС!</h2>
+                    <div class="cta__content-description">
+                        <p>Заповніть заявку, і наш менеджер зв’яжеться з вами, щоб розповісти про відкриті вакансії та можливості розвитку у команді Біхелс.</p>
+                    </div>
+                    <div class="cta__content-description--image">
+                        <img src="img/teqm.jpg" width="376" height="376" alt="Команда БІХЕЛС">
+                    </div>
+                </div>
+                <div class="cta__form-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="100">
+                    <span class="badge">Чекаємо на вас</span>
+                    <h3>Залиште ваш запит</h3>
+                    <form class="cta__form">
+                        <div class="cta__form-group">
+                            <label for="name">Ім’я:</label>
+                            <input type="text" id="name" name="name" placeholder="напр., Марія" required>
+                        </div>
+                        <div class="cta__form-group-row">
+                            <div class="cta__form-group">
+                                <label for="phone">Телефон:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+38 0XX  XXX  XX  XX" required>
+                            </div>
+                            <div class="cta__form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="напр., main@mail.com" required>
+                            </div>
+                        </div>
 
+                        <div class="cta__form-group">
+                            <label for="message">Ваше повідомлення:</label>
+                            <textarea id="message" name="message" placeholder="почніть вводити текст тут"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--white">
+                            <i class="icon-Namecomment-m" aria-hidden="true"></i>
+                            Надіслати
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <div class="banner">
             <div class="banner-image">
