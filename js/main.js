@@ -256,6 +256,33 @@ const newVacancysReviewsSwiper = new Swiper('.newvacancysreviews__swiper', {
   },
 });
 
+const missionSwiper = new Swiper('.mission-swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  loop: false,
+  navigation: {
+    nextEl: '.mission-swiper__button-next',
+    prevEl: '.mission-swiper__button-prev',
+  },
+
+  breakpoints: {
+    1280: { spaceBetween: 24 },
+  },
+});
+
+const sciencePhilosophySwiper = new Swiper('.science-philosophy__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  loop: false,
+  navigation: {
+    nextEl: '.science-philosophy-swiper__button-next',
+    prevEl: '.science-philosophy-swiper__button-prev',
+  },
+  breakpoints: {
+    1280: { spaceBetween: 24 },
+  },
+});
+
 // Приклад:
 // const swiper = new Swiper('.swiper', {
 //   loop: true,

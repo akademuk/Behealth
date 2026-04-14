@@ -3217,7 +3217,6 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 0;
   align-self: stretch;
 }
@@ -4423,6 +4422,368 @@ select {
   letter-spacing: 0;
 }
 
+.mission-section {
+  padding: 64px 16px 32px 16px;
+  background: var(--color-add-200);
+  overflow: hidden;
+}
+
+.mission-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.mission-section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.mission-section__title-text {
+  color: #1E1E1E;
+  font-size: var(--fs-36);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.mission-section__title-description {
+  color: #1E1E1E;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.mission-section__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.mission-section__body-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.mission-swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.mission-swiper .swiper-slide  {
+  width: 256px;
+  height: 256px;
+  border-radius: var(--fs-24);
+  background: #FFF;
+}
+
+.mission-swiper .swiper-slide:nth-of-type(2n) {
+  background: rgba(255, 255, 255, 0.50);
+}
+
+.mission-swiper__slide-content {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mission-swiper__slide-content h3 {
+  color: var(--color-primary-source);
+  font-size: var(--fs-36);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.mission-swiper__slide-content p {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.science-philosophy {
+  padding: 64px 15px;
+  background: var(--color-add-200);
+  overflow: hidden;
+}
+
+.science-philosophy .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.science-philosophy__title {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.science-philosophy__title-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.science-philosophy__title-left h2 {
+  color: var(--color-primary-10);
+  font-size: var(--fs-54);
+  font-weight: var(--fw-semibold);
+  line-height: 1.2;
+  letter-spacing: 0s;
+}
+
+.science-philosophy__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.science-philosophy__swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.science-philosophy__swiper .swiper-slide {
+  width: 256px;
+  height: 256px;
+  border-radius: var(--radius-16);
+  background: rgba(255, 255, 255, 0.40);
+}
+
+.science-philosophy__swiper .swiper-slide:nth-of-type(2n) {
+  background: var(--color-white);
+}
+
+.science-philosophy__slide {
+  padding: 48px 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.science-philosophy__slide h3 {
+  color: #000;
+  font-size: var(--fs-24);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.science-philosophy__slide p {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.mission-vision {
+  padding: 48px 16px 64px 16px;
+  background: var(--color-add-200);
+}
+
+.mission-vision .container {
+  display: flex;
+  max-width: 800px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.mission-vision__left {
+  min-width: 256px;
+  max-width: 676px;
+  padding: 32px 24px;
+  flex: 1 0 0;
+  border-radius: var(--radius-24);
+  background:#1F1D1D;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.mission-vision__logo {
+  position: absolute;
+  display: none;
+}
+
+.mission-vision__left h2 {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: var(--fs-36);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.mission-vision__left h3 {
+  color: var(--color-white);
+  font-size: var(--fs-45);
+  font-weight: var(--fw-medium);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.mission-vision-actions {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.mission-vision__right {
+  height: 364px;
+  min-width: 256px;
+  padding: 32px 24px;
+  flex: 1 0 0;
+  position: relative;
+  border-radius: var(--fs-24);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mission-vision__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mission-vision__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-vision__right h2 {
+  position: relative;
+  z-index: 2;
+  color:#1F1D1D;
+  font-size: var(--fs-36);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.mission-vision__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-vision__description  p {
+  color:#1F1D1D;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5622,6 +5983,83 @@ select {
 
   .article--legal .article__sidebar-list ul {
     gap: 16px;
+  }
+
+  .mission-section {
+    padding: 128px 52px 64px 52px;
+  }
+
+  .mission-section .container {
+    gap: 64px;
+  }
+
+  .mission-swiper .swiper-slide {
+    width: 376px;
+    height: 376px;
+  }
+
+  .mission-swiper__slide-content {
+    padding: 32px;
+  }
+
+  .science-philosophy {
+    padding: 128px 52px;
+  }
+
+  .science-philosophy .container {
+    gap: 64px;
+  }
+
+  .science-philosophy__title-left {
+    gap: 32px;
+  }
+
+  .science-philosophy__swiper .swiper-slide {
+    width: 376px;
+    height: 376px;
+  }
+
+  .mission-vision {
+    padding: 64px 52px 128px 52px;
+  }
+
+  .mission-vision .container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .mission-vision__left {
+    height: 751px;
+    max-width: 676px;
+    padding: 64px 48px;
+    justify-content: space-between;
+  }
+
+  .mission-vision__logo {
+    position: absolute;
+    right: 24px;
+    display: flex;
+    top: 24px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .mission-vision__logo  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .mission-vision__right {
+    height: 751px;
+    padding: 48px;
+  }
+
+  .mission-vision__description {
+    max-width: 476px;
   }
 }
 
