@@ -256,6 +256,30 @@ const newVacancysReviewsSwiper = new Swiper('.newvacancysreviews__swiper', {
   },
 });
 
+/* ========================================
+   Catalog Hero Gallery Swiper
+   ======================================== */
+
+const catalogThumbsSwiper = new Swiper('.catalog--hero__thumbs', {
+  slidesPerView: 'auto',
+  spaceBetween: 8,
+  watchSlidesProgress: true,
+  freeMode: true,
+});
+
+const catalogHeroSwiper = new Swiper('.catalog--hero__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: false,
+  navigation: {
+    nextEl: '.catalog--hero__swiper-next',
+    prevEl: '.catalog--hero__swiper-prev',
+  },
+  thumbs: {
+    swiper: catalogThumbsSwiper,
+  },
+});
+
 const missionSwiper = new Swiper('.mission-swiper', {
   slidesPerView: 'auto',
   spaceBetween: 16,
@@ -327,6 +351,31 @@ window.addEventListener('resize', initMissionTeamSwiper);
 //     1024: { slidesPerView: 3 },
 //   },
 // });
+
+/* ========================================
+   Catalog Info — Tab Switcher
+   ======================================== */
+
+(function () {
+  const tabs   = document.querySelectorAll('.catalog--hero-info__tab');
+  const panels = document.querySelectorAll('.catalog--hero-info__panel');
+
+  if (!tabs.length || !panels.length) return;
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        t.classList.remove('catalog--hero-info__tab--active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(p => { p.hidden = true; });
+
+      tab.classList.add('catalog--hero-info__tab--active');
+      tab.setAttribute('aria-selected', 'true');
+      panels[i].hidden = false;
+    });
+  });
+})();
 
 /* ========================================
    Blog Page — Tab Filter
