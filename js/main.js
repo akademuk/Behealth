@@ -353,6 +353,132 @@ window.addEventListener('resize', initMissionTeamSwiper);
 // });
 
 /* ========================================
+   Catalog — Filter Sidebar Toggle
+   ======================================== */
+
+(function () {
+  const btnOpen  = document.querySelector('.btn--filter-open');
+  const btnClose = document.querySelector('.btn-filter-close');
+  const sidebar  = document.querySelector('.catalog--catalog__sidebar');
+
+  if (!btnOpen || !sidebar) return;
+
+  function isMobile() { return window.innerWidth < 1280; }
+
+  function openSidebar() {
+    sidebar.classList.add('is-open');
+    document.body.classList.add('filter-open');
+    if (typeof lenis !== 'undefined' && lenis) lenis.stop();
+  }
+
+  function closeSidebar() {
+    sidebar.classList.remove('is-open');
+    document.body.classList.remove('filter-open');
+    if (typeof lenis !== 'undefined' && lenis) lenis.start();
+  }
+
+  btnOpen.addEventListener('click', () => {
+    if (isMobile()) openSidebar();
+  });
+
+  if (btnClose) {
+    btnClose.addEventListener('click', closeSidebar);
+  }
+
+  // Close on overlay click
+  document.addEventListener('click', (e) => {
+    if (
+      isMobile() &&
+      sidebar.classList.contains('is-open') &&
+      !sidebar.contains(e.target) &&
+      !btnOpen.contains(e.target)
+    ) {
+      closeSidebar();
+    }
+  });
+
+  // On resize to desktop — remove mobile state
+  window.addEventListener('resize', () => {
+    if (!isMobile()) {
+      sidebar.classList.remove('is-open');
+      document.body.classList.remove('filter-open');
+    }
+  });
+})();
+
+/* ========================================
+   Catalog — Category Filter + Search
+   ======================================== */
+
+(function () {
+  const categoryLinks = document.querySelectorAll('.catalog--catalog__sidebar-link');
+  const searchInput   = document.querySelector('#catalog-search');
+  const cards         = document.querySelectorAll('.catalog--catalog__products-list .news__card');
+  const countEl       = document.querySelector('.catalog--catalog__products-all');
+  const activeNameEl  = document.querySelector('.catalog--catalog__products-name');
+
+  if (!cards.length) return;
+
+  let activeCategory = 'усі препарати';
+  let searchQuery    = '';
+
+  function normalize(str) {
+    return str.trim().toLowerCase();
+  }
+
+  function applyFilters() {
+    let visible = 0;
+
+    cards.forEach(card => {
+      const badgeEl   = card.querySelector('.news__card-badge');
+      const titleEl   = card.querySelector('.news__card-title');
+      const badge     = badgeEl  ? normalize(badgeEl.textContent)  : '';
+      const title     = titleEl  ? normalize(titleEl.textContent)   : '';
+
+      const matchCat    = activeCategory === 'усі препарати' || badge === activeCategory;
+      const matchSearch = !searchQuery || title.includes(searchQuery) || badge.includes(searchQuery);
+
+      const show = matchCat && matchSearch;
+      card.hidden = !show;
+      if (show) visible++;
+    });
+
+    if (countEl) countEl.textContent = 'Знайдено ' + visible + ' продукт' + plural(visible);
+    if (activeNameEl) activeNameEl.textContent = activeCategory !== 'усі препарати' ? activeCategory : '';
+  }
+
+  function plural(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return '';
+    if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'и';
+    return 'ів';
+  }
+
+  // Category click
+  categoryLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      categoryLinks.forEach(l => l.classList.remove('is-active'));
+      link.classList.add('is-active');
+      activeCategory = normalize(link.textContent);
+      applyFilters();
+    });
+  });
+
+  // Set first link active by default
+  if (categoryLinks.length) categoryLinks[0].classList.add('is-active');
+
+  // Search input
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      searchQuery = normalize(searchInput.value);
+      applyFilters();
+    });
+  }
+
+  applyFilters();
+})();
+
+/* ========================================
    Catalog Info — Tab Switcher
    ======================================== */
 
