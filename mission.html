@@ -202,13 +202,14 @@
                 </div>
                 <div class="mission-section__body">
                     <div class="mission-section__body-actions">
-                        <button class="mission-swiper__button-next swiper-button-next" type="button"
-                            aria-label="Наступний слайд">
-                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
-                        </button>
                         <button class="mission-swiper__button-prev swiper-button-prev" type="button"
                             aria-label="Попередній слайд">
+                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
+                        </button>
+                        <button class="mission-swiper__button-next swiper-button-next" type="button"
+                            aria-label="Наступний слайд">
                             <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                            
                         </button>
                     </div>
                     <div class="mission-swiper swiper">
@@ -265,14 +266,16 @@
                         <h2>Наші цінності</h2>
                     </div>
                     <div class="science-philosophy__actions">
-                        <button class="science-philosophy-swiper__button-next swiper-button-next" type="button"
-                            aria-label="Наступний слайд">
-                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
-                        </button>
                         <button class="science-philosophy-swiper__button-prev swiper-button-prev" type="button"
                             aria-label="Попередній слайд">
-                            <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
                         </button>
+                        <button class="science-philosophy-swiper__button-next swiper-button-next" type="button"
+                            aria-label="Наступний слайд">
+                            <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                            
+                        </button>
+                        
                     </div>
                 </div>
                 <div class="science-philosophy__swiper swiper">
@@ -355,14 +358,16 @@
                         </p>
                     </div>
                     <div class="mission-section__body-actions">
-                        <button class="mission-team-swiper__button-next swiper-button-next" type="button"
-                            aria-label="Наступний слайд">
-                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
-                        </button>
                         <button class="mission-team-swiper__button-prev swiper-button-prev" type="button"
                             aria-label="Попередній слайд">
-                            <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                            <i class="icon-Namearrow_back" aria-hidden="true"></i>
                         </button>
+                        <button class="mission-team-swiper__button-next swiper-button-next" type="button"
+                            aria-label="Наступний слайд">
+                            <i class="icon-Namearrow_forward" aria-hidden="true"></i>
+                            
+                        </button>
+                        
                     </div>
                 </div>
 
@@ -399,7 +404,7 @@
             </div>
         </div>
 
-        <section class="cta cta--mission" aria-labelledby="cta-heading">
+        <section class="cta cta--mission cta--mission2" aria-labelledby="cta-heading">
             <div class="container">
                 <div class="cta__content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="cta__content-img">
@@ -437,6 +442,21 @@
                             <label for="message">Ваше повідомлення:</label>
                             <textarea id="message" name="message" placeholder="почніть вводити текст тут"
                                 required></textarea>
+                        </div>
+                        <div class="cta__form-group cta__form-group-new-style">
+                            <label for="resume">Файл резюме (необов'язково)</label>
+                            <div class="file-upload" id="file-upload-area">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
+                                    class="file-upload__input">
+                                <div class="file-upload__zone">
+                                    <i class="icon-Nameupload-m file-upload__icon" aria-hidden="true"></i>
+                                    <p class="file-upload__hint">Натисніть, щоб завантажити, або
+                                        перетягніть<br><span>PDF, DOC, DOCX (макс. 5MB)</span></p>
+                                    <label for="resume" class="file-upload__btn btn btn--transparent">Виберіть Файл
+
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn--white">
                             <i class="icon-Namecomment-m" aria-hidden="true"></i>

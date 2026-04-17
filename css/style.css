@@ -3211,6 +3211,21 @@ select {
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+  transition: all 0.4s;
+}
+
+.newvacancysreviews__item:hover {
+  background: #fff;
+}
+
+.newvacancysreviews__item a {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
 }
 
 .newvacancysreviews__item-title {
@@ -5977,7 +5992,7 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient( rgba(31, 29, 29, 0.00) 0%, #1F1D1D 100%);  
+  background: radial-gradient(rgba(31, 29, 29, 0.00) 0%, #1F1D1D 100%);
   z-index: 1;
 }
 
@@ -5986,11 +6001,11 @@ select {
   background: var(--color-white);
 }
 
-.catalog-article-news  .news__header-right {
+.catalog-article-news .news__header-right {
   margin-left: 0;
 }
 
-.catalog-article-news  .news__slide {
+.catalog-article-news .news__slide {
   width: 248px;
 }
 
@@ -5998,16 +6013,16 @@ select {
   height: 248px;
 }
 
-.catalog-article-news  .news__card-image  .news__card-badge {
+.catalog-article-news .news__card-image .news__card-badge {
   left: auto;
   right: 16px;
 }
 
-.catalog-article-news  .news__card-title {
+.catalog-article-news .news__card-title {
   min-height: auto;
 }
 
-.catalog-article-news  .news__card-content {
+.catalog-article-news .news__card-content {
   gap: 4px;
 }
 
@@ -6050,7 +6065,7 @@ body.filter-open::before {
 }
 
 .catalog--catalog__sidebar-header h3 {
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-24);
   font-weight: var(--fw-semibold);
   line-height: 1.4;
@@ -6141,7 +6156,7 @@ body.filter-open::before {
 
 .catalog--catalog {
   padding: 32px 16px 24px 16px;
-  background:#FFF;
+  background: #FFF;
 }
 
 .catalog--catalog__products {
@@ -6189,7 +6204,7 @@ body.filter-open::before {
 
 .catalog--catalog__products-name {
   padding: 7px 12px;
-  border-radius:  99px;
+  border-radius: 99px;
   border: 1.5px solid #FFF;
   color: #FFF;
   font-size: var(--fs-16);
@@ -6266,7 +6281,7 @@ body.filter-open::before {
 }
 
 .catalog--catalog__products-cards-content h3 {
-  color:#000;
+  color: #000;
   font-size: var(--fs-24);
   font-weight: var(--fw-semibold);
   line-height: 1.4;
@@ -6285,7 +6300,7 @@ body.filter-open::before {
   min-height: 57px;
   padding: 16px 24px;
   border-radius: 99px;
-  color:#1F1D1D;
+  color: #1F1D1D;
   font-size: var(--fs-16);
   font-weight: var(--fw-medium);
   line-height: 1.4;
@@ -6295,20 +6310,40 @@ body.filter-open::before {
 }
 
 .catalog--catalog__products-cards-link:hover {
-  background:#3A3939;
+  background: #3A3939;
+  color: #fff;
 }
 
 .catalog--catalog__products-cards-link:active {
-  background:#3A3939;
+  background: #3A3939;
+  color: #fff;
 }
 
+.hero-swiper__button-next:hover,
+.hero-swiper__button-prev:hover {
+  border-radius: 99px;
+  border: 1.5px solid #FFF;
+  background: rgba(255, 255, 255, 0.20);
+}
 
+.cta__form-group-new-style p {
+  font-size: 14px;
+  color: #1F1D1D;
+}
 
+.cta__form-group-new-style .btn {
+  margin-right: auto;
+}
 
+.article__sidebar-link.is-active {
+  background: #3A3939;
+  color: #fff;
+}
 
-
-
-
+.article--legal .article__sidebar-link.is-active {
+  color: #1F1D1D;
+  background: transparent;
+}
 
 
 
@@ -8035,6 +8070,27 @@ body.filter-open::before {
   .catalog--catalog__products-cards-content {
     flex: 1 0 0;
   }
+
+  .foundation--about .foundation__title-action {
+    justify-content: flex-end;
+  }
+
+  .foundation--about .foundation__title {
+    align-items: flex-end;
+  }
+
+  .catalog-article-news .news__slide .news__card-image {
+    height: 248px;
+  }
+
+  .cta--mission2 .cta__form-box {
+  margin-top: 100px;
+  margin-bottom: -250px;
+}
+
+.cta--mission2 .cta__content {
+  justify-content: center;
+}
 }
 
 /* ── Contact Success Modal ── */

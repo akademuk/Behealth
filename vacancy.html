@@ -226,7 +226,7 @@
                         <ul class="article__sidebar-list">
                             <li class="article__sidebar-item">
                                 <a href="#section-new-view"
-                                    class="article__sidebar-link btn article__sidebar-link--active">Що ми
+                                    class="article__sidebar-link btn is-active">Що ми
                                     пропонуємо?
                                     <i class="icon-Namearrow-right-down"></i>
                                 </a>
@@ -271,7 +271,7 @@
                             наші цінності та прагне робити внесок у важливу справу.</span>
                     </h2>
 
-                    <h3>Що ми пропонуємо?</h3>
+                    <h3 id="section-new-view">Що ми пропонуємо?</h3>
 
                     <ul>
                         <li>Офіційне працевлаштування з 1-го дня роботи (лікарняні, відпустки згідно КЗпП, наявність
@@ -284,7 +284,7 @@
                         <li>Корпоративні заходи та участь в соціальних проєктах.</li>
                     </ul>
 
-                    <h3>Основні обов'язки</h3>
+                    <h3 id="section-why">Основні обов'язки</h3>
 
                     <ul>
                         <li>Виконання планів продажів на закріпленій території.</li>
@@ -293,7 +293,7 @@
                         <li>Участь в організації та проведенні освітніх заходів, конференцій та круглих столів.</li>
                     </ul>
 
-                    <h3>Вимоги:</h3>
+                    <h3 id="section-services">Вимоги:</h3>
 
                     <ul>
                         <li>Вища медична або фармацевтична освіта.</li>
@@ -305,7 +305,7 @@
                         </li>
                     </ul>
 
-                    <form action="" class="article__content-form">
+                    <form action="" class="article__content-form" id="section-consultation">
                         <h4>Відгукнутися на вакансію</h4>
                         <div class="cta__form-group-row">
                             <div class="cta__form-group">
@@ -343,7 +343,7 @@
                         </button>
                     </form>
 
-                    <div class="article__content-cards">
+                    <div class="article__content-cards" id="section-path">
                         <article class="article__content-card">
                             <div class="article__content-card-left">
                                 <h3>Подайте заявку через Work.ua</h3>
@@ -373,12 +373,14 @@
                         <h2>Відгуки наших співробітників</h2>
                     </div>
                     <div class="reviews--vacancy__title-action">
-                        <button class="news__btn-next swiper-button-next" type="button" aria-label="Наступна новина">
+                        <button class="news__btn-prev swiper-button-prev" type="button" aria-label="Попередня новина">
                             <i class="icon-Namearrow_back" aria-hidden="true"></i>
                         </button>
-                        <button class="news__btn-prev swiper-button-prev" type="button" aria-label="Попередня новина">
+                        <button class="news__btn-next swiper-button-next" type="button" aria-label="Наступна новина">
+                            
                             <i class="icon-Namearrow_forward" aria-hidden="true"></i>
                         </button>
+                        
                     </div>
                 </div>
                 <div class="reviews--vacancy swiper">
@@ -763,14 +765,16 @@
                             <i class="icon-Namearrow-right-down" aria-hidden="true"></i>
                         </a>
                         <div class="newvacancysreviews__title-action">
-                            <button class="newvacancysreviews__btn-next swiper-button-next" type="button"
-                                aria-label="Наступна новина">
-                                <i class="icon-Namearrow_back" aria-hidden="true"></i>
-                            </button>
                             <button class="newvacancysreviews__btn-prev swiper-button-prev" type="button"
                                 aria-label="Попередня новина">
+                                <i class="icon-Namearrow_back" aria-hidden="true"></i>
+                                
+                            </button>
+                            <button class="newvacancysreviews__btn-next swiper-button-next" type="button"
+                                aria-label="Наступна новина">
                                 <i class="icon-Namearrow_forward" aria-hidden="true"></i>
                             </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -778,7 +782,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                                <a href="/">
+                                    <div class="newvacancysreviews__item-title">
                                     <h3>Медичний представник з фармацевтики</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -786,11 +791,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Київ
                                 </span>
+                                </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                                <a href="/">
+                                    <div class="newvacancysreviews__item-title">
                                     <h3>Спеціаліст з контролю якості</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -798,11 +805,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Дніпро
                                 </span>
+                                </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                                <a href="/">
+                                    <div class="newvacancysreviews__item-title">
                                     <h3>Менеджер з маркетингу</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -810,11 +819,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Київ
                                 </span>
+                                </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                               <a href="/">
+                                 <div class="newvacancysreviews__item-title">
                                     <h3>Технік виробництва</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -822,11 +833,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Дніпро
                                 </span>
+                               </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                                <a href="/">
+                                    <div class="newvacancysreviews__item-title">
                                     <h3>Медичний представник з фармацевтики</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -834,11 +847,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Київ
                                 </span>
+                                </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                               <a href="/">
+                                 <div class="newvacancysreviews__item-title">
                                     <h3>Спеціаліст з контролю якості</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -846,11 +861,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Дніпро
                                 </span>
+                               </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                                <a href="/">
+                                    <div class="newvacancysreviews__item-title">
                                     <h3>Менеджер з маркетингу</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -858,11 +875,13 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Київ
                                 </span>
+                                </a>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="newvacancysreviews__item">
-                                <div class="newvacancysreviews__item-title">
+                               <a href="/">
+                                 <div class="newvacancysreviews__item-title">
                                     <h3>Технік виробництва</h3>
                                     <p>35 000 – 45 000 грн, + квартальний бонус</p>
                                 </div>
@@ -870,6 +889,7 @@
                                     <i class="icon-Namelocation-m" aria-hidden="true"></i>
                                     Дніпро
                                 </span>
+                                 </a>
                             </article>
                         </div>
                     </div>
