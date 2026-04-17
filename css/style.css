@@ -7967,10 +7967,6 @@ body.filter-open::before {
     min-height: auto;
   }
 
-  .news__card-image {
-    height: 248px;
-  }
-
   .catalog--catalog {
     padding: 64px 52px 96px 52px;
   }
